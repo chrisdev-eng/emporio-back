@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -21,7 +22,14 @@ public class Venda {
     private LocalDateTime data;
 
     @Column(nullable = false)
-    private Double valorTotal;
+    private BigDecimal valorTotal;
+
+    @Column(nullable = false)
+    private BigDecimal valorRecebido;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private FormaPagamento formaPagamento;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
