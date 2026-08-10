@@ -5,27 +5,31 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "usuarios")
+@Table(name = "itens")
 @Getter
 @Setter
 
-public class Usuario {
-
+public class Item {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String nome;
 
-    @Column(unique = true, nullable = false)
-    private String login;
+    private String descricao;
 
     @Column(nullable = false)
-    private String senha;
+    private Double preco;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Perfil perfil;
+    private TipoItem tipo;
+
+    @ManyToOne
+    @JoinColumn(name = "categoria_id", nullable = false)
+    private Categoria categoria;
 
     @Column(nullable = false)
     private Boolean ativo = true;
