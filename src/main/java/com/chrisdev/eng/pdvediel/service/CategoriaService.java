@@ -1,8 +1,11 @@
 package com.chrisdev.eng.pdvediel.service;
 
+import com.chrisdev.eng.pdvediel.controller.dto.CategoriaRequestDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.CategoriaResponseDTO;
 import com.chrisdev.eng.pdvediel.entity.Categoria;
 import com.chrisdev.eng.pdvediel.repository.CategoriaRepository;
 import org.springframework.stereotype.Service;
+import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
 
 import java.util.List;
 
@@ -15,33 +18,65 @@ public class CategoriaService {
         this.categoriaRepository = categoriaRepository;
     }
 
-    public List<Categoria> listarTodas() {
-        return categoriaRepository.findAll();
+    public List<CategoriaResponseDTO> listarTodas() {
+        return categoriaRepository.findAll()
+                .stream()
+                .map(this::converterParaResponse)
+                .toList();
     }
 
-    public Categoria buscarPorId(Long id) {
-        return categoriaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
+    public CategoriaResponseDTO buscarPorId(Long id) {
+        Categoria categoria = categoriaRepository.findById(id)
+                .orElseThrow(() ->
+                        new RecursoNaoEncontradoException("Categoria não encontrada"));
+        return converterParaResponse(categoria);
     }
 
-    public Categoria criar(Categoria categoria) {
-        return categoriaRepository.save(categoria);
+    public CategoriaResponseDTO criar(CategoriaRequestDTO dto) {
+
+        Categoria categoria = new Categoria();
+
+        categoria.setNome(dto.nome());
+
+        Categoria categoriaSalva = categoriaRepository.save(categoria);
+
+        return converterParaResponse(categoriaSalva);
     }
 
-    public Categoria atualizar(Long id, Categoria categoria) {
+    public CategoriaResponseDTO atualizar(Long id, CategoriaRequestDTO dto) {
+
         Categoria categoriaExistente = categoriaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
+                .orElseThrow(() ->
+                        new RecursoNaoEncontradoException("Categoria não encontrada"));
+        categoriaExistente.setNome(dto.nome());
 
-        categoriaExistente.setNome(categoria.getNome());
-        categoriaExistente.setAtivo(categoria.getAtivo());
+        Categoria categoriaAtualizada =
+                categoriaRepository.save(categoriaExistente);
 
-        return categoriaRepository.save(categoriaExistente);
+        return converterParaResponse(categoriaAtualizada);
     }
 
     public void excluir(Long id) {
-        Categoria categoria = categoriaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
 
+        Categoria categoria = categoriaRepository.findById(id)
+                .orElseThrow(() ->
+                        new RecursoNaoEncontradoException("Categoria não encontrada"));
         categoriaRepository.delete(categoria);
+    }
+
+    private CategoriaResponseDTO converterParaResponse(Categoria categoria) {
+
+        return new CategoriaResponseDTO(
+                categoria.getId(),
+                categoria.getNome(),
+                categoria.getAtivo()
+        );
+    }
+
+    public List<CategoriaResponseDTO> buscarPorNome(String nome) {
+        return categoriaRepository.findByNomeContainingIgnoreCase(nome)
+                .stream()
+                .map(this::converterParaResponse)
+                .toList();
     }
 }

@@ -1,18 +1,18 @@
 package com.chrisdev.eng.pdvediel.controller;
 
-import com.chrisdev.eng.pdvediel.entity.Categoria;
+import com.chrisdev.eng.pdvediel.controller.dto.CategoriaRequestDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.CategoriaResponseDTO;
 import com.chrisdev.eng.pdvediel.service.CategoriaService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/categorias")
 public class CategoriaController {
 
     private final CategoriaService categoriaService;
@@ -21,31 +21,53 @@ public class CategoriaController {
         this.categoriaService = categoriaService;
     }
 
-    @GetMapping("/categorias")
-    public List<Categoria> listarTodas() {
-        return categoriaService.listarTodas();
+    @GetMapping
+    public ResponseEntity<List<CategoriaResponseDTO>> listarTodas() {
+
+        return ResponseEntity.ok(categoriaService.listarTodas());
     }
 
-    @GetMapping("/categorias/{id}")
-    public Categoria buscarPorId(@PathVariable Long id) {
-        return categoriaService.buscarPorId(id);
+    @GetMapping("/{id}")
+    public ResponseEntity<CategoriaResponseDTO> buscarPorId(
+            @PathVariable Long id) {
+
+        return ResponseEntity.ok(categoriaService.buscarPorId(id));
     }
 
-    @PostMapping("/categorias")
-    public Categoria criar(@RequestBody Categoria categoria) {
-        return categoriaService.criar(categoria);
+    @PostMapping
+    public ResponseEntity<CategoriaResponseDTO> criar(
+           @Valid @RequestBody CategoriaRequestDTO dto) {
+
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(categoriaService.criar(dto));
     }
 
-    @PutMapping("/categorias/{id}")
-    public Categoria atualizar(
+    @PutMapping("/{id}")
+    public ResponseEntity<CategoriaResponseDTO> atualizar(
             @PathVariable Long id,
-            @RequestBody Categoria categoria) {
+           @Valid @RequestBody CategoriaRequestDTO dto) {
 
-        return categoriaService.atualizar(id, categoria);
+        return ResponseEntity.ok(
+                categoriaService.atualizar(id, dto)
+        );
     }
 
-    @DeleteMapping("/categorias/{id}")
-    public void excluir(@PathVariable Long id) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> excluir(
+            @PathVariable Long id) {
+
         categoriaService.excluir(id);
+
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/buscar")
+    public ResponseEntity<List<CategoriaResponseDTO>> buscarPorNome(
+            @RequestParam String nome) {
+
+        return ResponseEntity.ok(
+                categoriaService.buscarPorNome(nome)
+        );
     }
 }
