@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/pdvediel
     username: postgres
-    password: ${DB_PASSWORD}
+    password: ${DB_PASSWORD:postgres}
   jpa:
     hibernate:
       ddl-auto: validate
