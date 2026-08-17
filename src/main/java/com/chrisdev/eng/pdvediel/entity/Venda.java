@@ -7,6 +7,8 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+//entidade que representa uma venda que foi realizada no sistema
+//registrando seus valores, forma de pagamento e quem vendeu
 @Entity
 @Table(name = "vendas")
 @Getter

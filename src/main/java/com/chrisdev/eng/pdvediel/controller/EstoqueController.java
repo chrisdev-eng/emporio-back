@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//Controller responsável pelas op de consulta e gerenciamento de estoque
 @RestController
 public class EstoqueController {
 
@@ -31,11 +32,13 @@ public class EstoqueController {
         return estoqueService.buscarPorId(id);
     }
 
+    //cadastra um novo registro de estoque
     @PostMapping("/estoques")
     public Estoque criar(@RequestBody Estoque estoque) {
         return estoqueService.criar(estoque);
     }
 
+        //att o registro de estoque pelo ID
     @PutMapping("/estoques/{id}")
     public Estoque atualizar(
             @PathVariable Long id,

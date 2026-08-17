@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+//Controller responsável pelas op relacionadas á categoria.
+//Disponilibiza endpoints pra cadastro, consulta, atualização e exclusão
 @RestController
 @RequestMapping("/categorias")
 public class CategoriaController {
@@ -34,6 +36,7 @@ public class CategoriaController {
         return ResponseEntity.ok(categoriaService.buscarPorId(id));
     }
 
+    //cadastra nova categoria e retorna o recurso que foi criado
     @PostMapping
     public ResponseEntity<CategoriaResponseDTO> criar(
            @Valid @RequestBody CategoriaRequestDTO dto) {
@@ -53,6 +56,7 @@ public class CategoriaController {
         );
     }
 
+    //exclui a categoria informada e retorna um 204 quando foi finalizado a operacao
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(
             @PathVariable Long id) {
@@ -62,6 +66,7 @@ public class CategoriaController {
         return ResponseEntity.noContent().build();
     }
 
+    //aqui busca categoria pelo nome informado como o parametroda req
     @GetMapping("/buscar")
     public ResponseEntity<List<CategoriaResponseDTO>> buscarPorNome(
             @RequestParam String nome) {

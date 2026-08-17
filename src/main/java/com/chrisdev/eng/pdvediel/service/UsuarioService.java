@@ -5,7 +5,7 @@ import com.chrisdev.eng.pdvediel.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+//contem regras de negocio relacionados aos users do sistema
 @Service
 public class UsuarioService {
 

@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
+//entidade que repesenta um item vendido pelo sistema
+// pode ser produto ou um serviço(Taxa)
 @Entity
 @Table(name = "itens")
 @Getter

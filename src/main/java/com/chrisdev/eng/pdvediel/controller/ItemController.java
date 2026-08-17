@@ -1,18 +1,18 @@
 package com.chrisdev.eng.pdvediel.controller;
 
-import com.chrisdev.eng.pdvediel.entity.Item;
+import com.chrisdev.eng.pdvediel.controller.dto.ItemRequestDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.ItemResponseDTO;
 import com.chrisdev.eng.pdvediel.service.ItemService;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//controller responsável pela ops relacionadas aos itens do sistema
+//permite consultar, cadastrar, atualizar e excluir itens
 @RestController
+@RequestMapping("/itens")
 public class ItemController {
 
     private final ItemService itemService;
@@ -21,30 +21,43 @@ public class ItemController {
         this.itemService = itemService;
     }
 
-    @GetMapping("/itens")
-    public List<Item> listarTodos() {
+    @GetMapping
+    public List<ItemResponseDTO> listarTodos() {
         return itemService.listarTodos();
     }
 
-    @GetMapping("/itens/{id}")
-    public Item buscarPorId(@PathVariable Long id) {
+    @GetMapping("/{id}")
+    public ItemResponseDTO buscarPorId(@PathVariable Long id) {
         return itemService.buscarPorId(id);
     }
 
-    @PostMapping("/itens")
-    public Item criar(@RequestBody Item item) {
-        return itemService.criar(item);
+    //busca itens pelo nome informado como parametro da req
+    @GetMapping("/buscar")
+    public List<ItemResponseDTO> buscarPorNome(
+            @RequestParam String nome) {
+
+        return itemService.buscarPorNome(nome);
     }
 
-    @PutMapping("/itens/{id}")
-    public Item atualizar(
+    //cadastra um novo item e retorna o recurso q foi criado
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public ItemResponseDTO criar(
+            @Valid @RequestBody ItemRequestDTO dto) {
+
+        return itemService.criar(dto);
+    }
+
+    @PutMapping("/{id}")
+    public ItemResponseDTO atualizar(
             @PathVariable Long id,
-            @RequestBody Item item) {
+            @Valid @RequestBody ItemRequestDTO dto) {
 
-        return itemService.atualizar(id, item);
+        return itemService.atualizar(id, dto);
     }
 
-    @DeleteMapping("/itens/{id}")
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(@PathVariable Long id) {
         itemService.excluir(id);
     }

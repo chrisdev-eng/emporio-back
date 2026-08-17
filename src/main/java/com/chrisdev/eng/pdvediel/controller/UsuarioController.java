@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//controller resp pela op de gerenciamento dos users
 @RestController
 public class UsuarioController {
 

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//controller responsável pelo registro e consulta das movimentações do estoque
 @RestController
 public class MovimentacaoEstoqueController {
 
@@ -30,6 +31,7 @@ public class MovimentacaoEstoqueController {
         return movimentacaoEstoqueService.buscarPorId(id);
     }
 
+    //registra uma nova movimentação de entrada ou de saída do estoque
     @PostMapping("/movimentacoes")
     public MovimentacaoEstoque criar(
             @RequestBody MovimentacaoEstoque movimentacao) {

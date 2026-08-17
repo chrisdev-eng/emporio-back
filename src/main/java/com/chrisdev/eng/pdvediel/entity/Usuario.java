@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+//entidade qe representa um usuario do sistema
+//identificado por um perfil que define suas permissões de acesso
 @Entity
 @Table(name = "usuarios")
 @Getter

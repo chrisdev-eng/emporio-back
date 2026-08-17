@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+//Entidade que representa a categoria de itens do sistema
 @Entity
 @Table(name = "categorias")
 @Getter

@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+//entidade que registra movimentações de entrada e saída de estoque
+//vincula cada movimentação a um item e um usuário responsável
 @Entity
 @Table(name = "movimentacoes_estoque")
 @Getter

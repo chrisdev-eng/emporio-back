@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import java.math.BigDecimal;
 
+//entidade que representa um item incluído numa venda
+//armazenando sua qtd e o preço unitário no momento da venda
 @Entity
 @Table(name = "itens_venda")
 @Getter

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//contem as regras de negocio relacionados as movimetnações de estoque
 @Service
 public class MovimentacaoEstoqueService {
 

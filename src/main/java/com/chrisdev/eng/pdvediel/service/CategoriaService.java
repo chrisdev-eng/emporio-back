@@ -9,6 +9,7 @@ import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
 
 import java.util.List;
 
+//contém as regras de negocio relacionadas ás categorias
 @Service
 public class CategoriaService {
 
