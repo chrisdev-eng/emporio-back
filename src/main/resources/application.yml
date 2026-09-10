@@ -2,7 +2,7 @@ spring:
   application:
     name: pdvEdiel
   datasource:
-    url: jdbc:postgresql://localhost:5432/pdvediel
+    url: jdbc:postgresql://localhost:5555/pdvediel
     username: postgres
     password: ${DB_PASSWORD:postgres}
   jpa:
@@ -13,3 +13,7 @@ spring:
       hibernate:
         format_sql: true
     open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
