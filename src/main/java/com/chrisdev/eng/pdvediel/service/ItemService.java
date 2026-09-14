@@ -6,6 +6,7 @@ import com.chrisdev.eng.pdvediel.entity.Categoria;
 import com.chrisdev.eng.pdvediel.entity.Item;
 import com.chrisdev.eng.pdvediel.repository.CategoriaRepository;
 import com.chrisdev.eng.pdvediel.repository.ItemRepository;
+import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,7 +35,7 @@ public class ItemService {
 
     public ItemResponseDTO buscarPorId(Long id) {
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
         return converterParaResponse(item);
     }
@@ -49,8 +50,7 @@ public class ItemService {
     public ItemResponseDTO criar(ItemRequestDTO dto) {
 
         Categoria categoria = categoriaRepository.findById(dto.categoriaId())
-                .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
-
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Categoria não encontrada"));
         Item item = new Item();
 
         item.setNome(dto.nome());
@@ -67,10 +67,10 @@ public class ItemService {
     public ItemResponseDTO atualizar(Long id, ItemRequestDTO dto) {
 
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
         Categoria categoria = categoriaRepository.findById(dto.categoriaId())
-                .orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Categoria não encontrada"));
 
         item.setNome(dto.nome());
         item.setDescricao(dto.descricao());
@@ -86,7 +86,7 @@ public class ItemService {
     public void excluir(Long id) {
 
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
         itemRepository.delete(item);
     }

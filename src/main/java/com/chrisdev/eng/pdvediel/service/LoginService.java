@@ -1,5 +1,6 @@
 package com.chrisdev.eng.pdvediel.service;
 
+import com.chrisdev.eng.pdvediel.exception.CredenciaisInvalidasException;
 import com.chrisdev.eng.pdvediel.controller.dto.LoginRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.LoginResponseDTO;
 import com.chrisdev.eng.pdvediel.entity.Usuario;
@@ -17,16 +18,15 @@ public class LoginService {
 
     public LoginResponseDTO autenticar(LoginRequestDTO request) {
         Usuario usuario = usuarioRepository.findByLogin(request.login())
-                .orElseThrow(() -> new RuntimeException("Login ou senha inválidos"));
+                .orElseThrow(() ->
+                        new CredenciaisInvalidasException("Login ou senha inválidos"));
 
-        // ATENÇÃO: comparação em texto puro, só pra ambiente de teste/dev.
-        // Trocar por BCryptPasswordEncoder.matches() antes de ir pra produção.
         if (!usuario.getSenha().equals(request.senha())) {
-            throw new RuntimeException("Login ou senha inválidos");
+            throw new CredenciaisInvalidasException("Login ou senha inválidos");
         }
 
         if (!usuario.getAtivo()) {
-            throw new RuntimeException("Usuário inativo");
+            throw new CredenciaisInvalidasException("Usuário inativo");
         }
 
         return new LoginResponseDTO(

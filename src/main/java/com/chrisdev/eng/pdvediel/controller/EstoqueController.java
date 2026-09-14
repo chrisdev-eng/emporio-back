@@ -1,19 +1,17 @@
 package com.chrisdev.eng.pdvediel.controller;
 
-import com.chrisdev.eng.pdvediel.entity.Estoque;
+import com.chrisdev.eng.pdvediel.controller.dto.EstoqueRequestDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.EstoqueResponseDTO;
 import com.chrisdev.eng.pdvediel.service.EstoqueService;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 //Controller responsável pelas op de consulta e gerenciamento de estoque
 @RestController
+@RequestMapping("/estoques")
 public class EstoqueController {
 
     private final EstoqueService estoqueService;
@@ -22,32 +20,36 @@ public class EstoqueController {
         this.estoqueService = estoqueService;
     }
 
-    @GetMapping("/estoques")
-    public List<Estoque> listarTodos() {
+    @GetMapping
+    public List<EstoqueResponseDTO> listarTodos() {
         return estoqueService.listarTodos();
     }
 
-    @GetMapping("/estoques/{id}")
-    public Estoque buscarPorId(@PathVariable Long id) {
+    @GetMapping("/{id}")
+    public EstoqueResponseDTO buscarPorId(@PathVariable Long id) {
         return estoqueService.buscarPorId(id);
     }
 
     //cadastra um novo registro de estoque
-    @PostMapping("/estoques")
-    public Estoque criar(@RequestBody Estoque estoque) {
-        return estoqueService.criar(estoque);
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public EstoqueResponseDTO criar(
+            @Valid @RequestBody EstoqueRequestDTO dto) {
+
+        return estoqueService.criar(dto);
     }
 
-        //att o registro de estoque pelo ID
-    @PutMapping("/estoques/{id}")
-    public Estoque atualizar(
+    //att o registro de estoque pelo ID
+    @PutMapping("/{id}")
+    public EstoqueResponseDTO atualizar(
             @PathVariable Long id,
-            @RequestBody Estoque estoque) {
+            @Valid @RequestBody EstoqueRequestDTO dto) {
 
-        return estoqueService.atualizar(id, estoque);
+        return estoqueService.atualizar(id, dto);
     }
 
-    @DeleteMapping("/estoques/{id}")
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(@PathVariable Long id) {
         estoqueService.excluir(id);
     }

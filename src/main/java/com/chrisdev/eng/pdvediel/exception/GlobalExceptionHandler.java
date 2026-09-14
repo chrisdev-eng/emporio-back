@@ -16,4 +16,22 @@ public class GlobalExceptionHandler {
                 .status(HttpStatus.NOT_FOUND)
                 .body(exception.getMessage());
     }
+
+    @ExceptionHandler(CredenciaisInvalidasException.class)
+    public ResponseEntity<String> tratarCredenciaisInvalidas(
+            CredenciaisInvalidasException exception) {
+
+        return ResponseEntity
+                .status(HttpStatus.UNAUTHORIZED)
+                .body(exception.getMessage());
+    }
+
+    @ExceptionHandler(EstoqueInsuficienteException.class)
+    public ResponseEntity<String> tratarEstoqueInsuficiente(
+            EstoqueInsuficienteException exception) {
+
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(exception.getMessage());
+    }
 }

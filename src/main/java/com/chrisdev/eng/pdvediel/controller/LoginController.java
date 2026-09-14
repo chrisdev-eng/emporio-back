@@ -5,6 +5,7 @@ import com.chrisdev.eng.pdvediel.controller.dto.LoginResponseDTO;
 import com.chrisdev.eng.pdvediel.service.LoginService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/login")
@@ -23,7 +24,7 @@ public class LoginController {
     }
 
     @PostMapping
-    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO request) {
+    public ResponseEntity<LoginResponseDTO> login(@Valid @RequestBody LoginRequestDTO request) {
         LoginResponseDTO response = loginService.autenticar(request);
         return ResponseEntity.ok(response);
     }
