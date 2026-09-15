@@ -16,6 +16,8 @@ import com.chrisdev.eng.pdvediel.repository.ItemRepository;
 import com.chrisdev.eng.pdvediel.repository.ItemVendaRepository;
 import com.chrisdev.eng.pdvediel.repository.UsuarioRepository;
 import com.chrisdev.eng.pdvediel.repository.VendaRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,6 +28,8 @@ import java.util.List;
 
 @Service
 public class VendaService {
+
+    private static final Logger logger = LoggerFactory.getLogger(VendaService.class);
 
     private final VendaRepository vendaRepository;
     private final ItemVendaRepository itemVendaRepository;
@@ -50,6 +54,8 @@ public class VendaService {
     @Transactional
     public VendaResponseDTO criar(VendaRequestDTO dto) {
 
+        logger.info("Iniciando venda para o usuário {}", dto.usuarioId());
+
         Usuario usuario = usuarioRepository.findById(dto.usuarioId())
                 .orElseThrow(() ->
                         new RecursoNaoEncontradoException("Usuário não encontrado"));
@@ -70,6 +76,14 @@ public class VendaService {
                                     "Estoque não encontrado para o item"));
 
             if (estoque.getQuantidade() < itemDTO.quantidade()) {
+
+                logger.warn(
+                        "Estoque insuficiente para o item {}. Disponível: {}, solicitado: {}",
+                        item.getNome(),
+                        estoque.getQuantidade(),
+                        itemDTO.quantidade()
+                );
+
                 throw new EstoqueInsuficienteException(
                         "Estoque insuficiente para o item: " + item.getNome()
                 );
@@ -88,6 +102,13 @@ public class VendaService {
             );
 
             estoqueRepository.save(estoque);
+
+            logger.info(
+                    "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
+                    item.getNome(),
+                    itemDTO.quantidade(),
+                    subtotal
+            );
 
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.setItem(item);
@@ -111,10 +132,21 @@ public class VendaService {
             itemVendaRepository.save(itemVenda);
         }
 
+        logger.info(
+                "Venda {} realizada com sucesso. Usuário: {}, valor total: {}, forma de pagamento: {}",
+                vendaSalva.getId(),
+                usuario.getLogin(),
+                valorTotal,
+                dto.formaPagamento()
+        );
+
         return converterParaResponse(vendaSalva);
     }
 
     public List<VendaResponseDTO> listarTodas() {
+
+        logger.info("Listando todas as vendas");
+
         return vendaRepository.findAll()
                 .stream()
                 .map(this::converterParaResponse)
@@ -122,6 +154,9 @@ public class VendaService {
     }
 
     public VendaResponseDTO buscarPorId(Long id) {
+
+        logger.info("Buscando venda pelo ID {}", id);
+
         Venda venda = vendaRepository.findById(id)
                 .orElseThrow(() ->
                         new RecursoNaoEncontradoException("Venda não encontrada"));
