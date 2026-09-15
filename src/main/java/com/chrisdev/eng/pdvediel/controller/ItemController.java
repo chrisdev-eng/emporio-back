@@ -6,12 +6,20 @@ import com.chrisdev.eng.pdvediel.service.ItemService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
 //controller responsável pela ops relacionadas aos itens do sistema
 //permite consultar, cadastrar, atualizar e excluir itens
 @RestController
+@CrossOrigin(
+        origins = "http://localhost:4200",
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS},
+        allowedHeaders = "*",
+        allowCredentials = "true"
+)
 @RequestMapping("/itens")
 public class ItemController {
 
