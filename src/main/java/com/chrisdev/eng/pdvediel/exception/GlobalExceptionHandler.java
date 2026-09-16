@@ -2,6 +2,7 @@ package com.chrisdev.eng.pdvediel.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -50,4 +51,12 @@ public class GlobalExceptionHandler {
             .status(HttpStatus.BAD_REQUEST)
             .body(mensagem);
     }
+     @ExceptionHandler(DataIntegrityViolationException.class)
+     public ResponseEntity<String> tratarConflitoDados(
+        DataIntegrityViolationException exception) {
+
+    return ResponseEntity
+            .status(HttpStatus.CONFLICT)
+            .body("Conflito de dados: já existe um registro com essas informações");
+   }
 }
