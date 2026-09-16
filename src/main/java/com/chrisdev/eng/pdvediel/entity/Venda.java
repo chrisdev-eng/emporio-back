@@ -3,7 +3,7 @@ package com.chrisdev.eng.pdvediel.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
+import java.util.List;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -36,4 +36,7 @@ public class Venda {
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
+    
+    @OneToMany(mappedBy = "venda")
+    private List<ItemVenda> itens;
 }
