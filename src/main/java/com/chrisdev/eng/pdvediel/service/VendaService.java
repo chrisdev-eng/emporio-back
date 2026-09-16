@@ -4,6 +4,9 @@ import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaResponseDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaResponseDTO;
+import com.chrisdev.eng.pdvediel.entity.MovimentacaoEstoque;
+import com.chrisdev.eng.pdvediel.entity.TipoMovimentacao;
+import com.chrisdev.eng.pdvediel.repository.MovimentacaoEstoqueRepository;
 import com.chrisdev.eng.pdvediel.entity.Estoque;
 import com.chrisdev.eng.pdvediel.entity.Item;
 import com.chrisdev.eng.pdvediel.entity.ItemVenda;
@@ -36,19 +39,22 @@ public class VendaService {
     private final ItemRepository itemRepository;
     private final EstoqueRepository estoqueRepository;
     private final UsuarioRepository usuarioRepository;
+    private final MovimentacaoEstoqueRepository movimentacaoEstoqueRepository;
 
     public VendaService(
             VendaRepository vendaRepository,
             ItemVendaRepository itemVendaRepository,
             ItemRepository itemRepository,
             EstoqueRepository estoqueRepository,
-            UsuarioRepository usuarioRepository) {
+            UsuarioRepository usuarioRepository,
+            MovimentacaoEstoqueRepository movimentacaoEstoqueRepository){
 
         this.vendaRepository = vendaRepository;
         this.itemVendaRepository = itemVendaRepository;
         this.itemRepository = itemRepository;
         this.estoqueRepository = estoqueRepository;
         this.usuarioRepository = usuarioRepository;
+        this.movimentacaoEstoqueRepository = movimentacaoEstoqueRepository;
     }
 
     @Transactional
@@ -102,6 +108,15 @@ public class VendaService {
             );
 
             estoqueRepository.save(estoque);
+
+            MovimentacaoEstoque movimentacao = new MovimentacaoEstoque();
+            movimentacao.setItem(item);
+            movimentacao.setQuantidade(itemDTO.quantidade());
+            movimentacao.setTipo(TipoMovimentacao.SAIDA);
+            movimentacao.setData(LocalDateTime.now());
+            movimentacao.setUsuario(usuario);
+
+            movimentacaoEstoqueRepository.save(movimentacao);  
 
             logger.info(
                     "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
