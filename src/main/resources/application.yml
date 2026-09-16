@@ -3,7 +3,7 @@ spring:
     name: pdvEdiel
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/pdv
+    url: jdbc:postgresql://localhost:5555/pdvediel
     username: postgres
     password: postgres
 
@@ -17,4 +17,5 @@ spring:
     open-in-view: false
 
   flyway:
-     enabled: true
+    enabled: true
+    baseline-on-migrate: true
