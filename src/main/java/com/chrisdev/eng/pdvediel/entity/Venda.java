@@ -36,6 +36,10 @@ public class Venda {
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
+
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
     
     @OneToMany(mappedBy = "venda")
     private List<ItemVenda> itens;

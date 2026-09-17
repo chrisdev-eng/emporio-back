@@ -62,7 +62,8 @@ public class CategoriaService {
         Categoria categoria = categoriaRepository.findById(id)
                 .orElseThrow(() ->
                         new RecursoNaoEncontradoException("Categoria não encontrada"));
-        categoriaRepository.delete(categoria);
+        categoria.setAtivo(false);
+        categoriaRepository.save(categoria);
     }
 
     private CategoriaResponseDTO converterParaResponse(Categoria categoria) {

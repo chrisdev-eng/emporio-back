@@ -4,6 +4,8 @@ import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaResponseDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaResponseDTO;
+import com.chrisdev.eng.pdvediel.entity.Cliente;
+import com.chrisdev.eng.pdvediel.repository.ClienteRepository;
 import com.chrisdev.eng.pdvediel.entity.MovimentacaoEstoque;
 import com.chrisdev.eng.pdvediel.entity.TipoMovimentacao;
 import com.chrisdev.eng.pdvediel.repository.MovimentacaoEstoqueRepository;
@@ -40,6 +42,7 @@ public class VendaService {
     private final EstoqueRepository estoqueRepository;
     private final UsuarioRepository usuarioRepository;
     private final MovimentacaoEstoqueRepository movimentacaoEstoqueRepository;
+    private final ClienteRepository clienteRepository;
 
     public VendaService(
             VendaRepository vendaRepository,
@@ -47,7 +50,8 @@ public class VendaService {
             ItemRepository itemRepository,
             EstoqueRepository estoqueRepository,
             UsuarioRepository usuarioRepository,
-            MovimentacaoEstoqueRepository movimentacaoEstoqueRepository){
+            MovimentacaoEstoqueRepository movimentacaoEstoqueRepository,
+            ClienteRepository clienteRepository) {
 
         this.vendaRepository = vendaRepository;
         this.itemVendaRepository = itemVendaRepository;
@@ -55,6 +59,7 @@ public class VendaService {
         this.estoqueRepository = estoqueRepository;
         this.usuarioRepository = usuarioRepository;
         this.movimentacaoEstoqueRepository = movimentacaoEstoqueRepository;
+        this.clienteRepository = clienteRepository;
     }
 
     @Transactional
@@ -65,6 +70,18 @@ public class VendaService {
         Usuario usuario = usuarioRepository.findById(dto.usuarioId())
                 .orElseThrow(() ->
                         new RecursoNaoEncontradoException("Usuário não encontrado"));
+
+        Cliente cliente = null;
+
+        if (dto.clienteId() != null) {
+            cliente = clienteRepository.findById(dto.clienteId())
+                    .orElseThrow(() ->
+                            new RecursoNaoEncontradoException("Cliente não encontrado"));
+
+            if (!cliente.getAtivo()) {
+                throw new RecursoNaoEncontradoException("Cliente inativo");
+            }
+        }
 
         BigDecimal valorTotal = BigDecimal.ZERO;
 
@@ -116,7 +133,7 @@ public class VendaService {
             movimentacao.setData(LocalDateTime.now());
             movimentacao.setUsuario(usuario);
 
-            movimentacaoEstoqueRepository.save(movimentacao);  
+            movimentacaoEstoqueRepository.save(movimentacao);
 
             logger.info(
                     "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
@@ -139,6 +156,7 @@ public class VendaService {
         venda.setValorRecebido(valorTotal);
         venda.setFormaPagamento(dto.formaPagamento());
         venda.setUsuario(usuario);
+        venda.setCliente(cliente);
 
         Venda vendaSalva = vendaRepository.save(venda);
 
@@ -207,6 +225,8 @@ public class VendaService {
                 venda.getFormaPagamento(),
                 venda.getUsuario().getId(),
                 venda.getUsuario().getNome(),
+                venda.getCliente() != null ? venda.getCliente().getId() : null,
+                venda.getCliente() != null ? venda.getCliente().getNome() : null,
                 itens
         );
     }

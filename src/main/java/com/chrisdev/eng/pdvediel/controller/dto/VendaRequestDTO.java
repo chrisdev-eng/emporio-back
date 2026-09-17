@@ -15,6 +15,8 @@ public record VendaRequestDTO(
         @NotNull(message = "O usuário é obrigatório")
         Long usuarioId,
 
+        Long clienteId,
+
         @NotEmpty(message = "A venda deve possuir pelo menos um item")
         List<@Valid ItemVendaRequestDTO> itens
 
