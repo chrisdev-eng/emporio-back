@@ -88,7 +88,8 @@ public class ItemService {
         Item item = itemRepository.findById(id)
                 .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
-        itemRepository.delete(item);
+        item.setAtivo(false);
+        itemRepository.save(item);
     }
 
     private ItemResponseDTO converterParaResponse(Item item) {

@@ -3,13 +3,13 @@ spring:
     name: pdvEdiel
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/pdv
+    url: jdbc:postgresql://localhost:5555/pdvediel
     username: postgres
     password: postgres
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     properties:
       hibernate:

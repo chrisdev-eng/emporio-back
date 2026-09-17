@@ -14,6 +14,8 @@ public record VendaResponseDTO(
         FormaPagamento formaPagamento,
         Long usuarioId,
         String usuarioNome,
+        Long clienteId,
+        String clienteNome,
         List<ItemVendaResponseDTO> itens
 ) {
 }

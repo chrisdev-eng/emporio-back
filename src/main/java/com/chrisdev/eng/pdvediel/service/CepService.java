@@ -2,6 +2,7 @@ package com.chrisdev.eng.pdvediel.service;
 
 import com.chrisdev.eng.pdvediel.client.ViaCepClient;
 import com.chrisdev.eng.pdvediel.client.ViaCepResponse;
+import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,12 @@ public class CepService {
     }
 
     public ViaCepResponse buscarPorCep(String cep) {
-        return viaCepClient.buscarPorCep(cep);
+        ViaCepResponse resposta = viaCepClient.buscarPorCep(cep);
+
+        if (Boolean.TRUE.equals(resposta.erro())) {
+            throw new RecursoNaoEncontradoException("CEP não encontrado");
+        }
+
+        return resposta;
     }
 }

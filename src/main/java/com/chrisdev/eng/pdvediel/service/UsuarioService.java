@@ -2,9 +2,11 @@ package com.chrisdev.eng.pdvediel.service;
 
 import com.chrisdev.eng.pdvediel.controller.dto.UsuarioRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.UsuarioResponseDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.UsuarioUpdateDTO;
 import com.chrisdev.eng.pdvediel.entity.Usuario;
 import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
 import com.chrisdev.eng.pdvediel.repository.UsuarioRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,9 +16,11 @@ import java.util.List;
 public class UsuarioService {
 
     private final UsuarioRepository usuarioRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public UsuarioService(UsuarioRepository usuarioRepository) {
+    public UsuarioService(UsuarioRepository usuarioRepository, PasswordEncoder passwordEncoder) {
         this.usuarioRepository = usuarioRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<UsuarioResponseDTO> listarTodos() {
@@ -38,7 +42,7 @@ public class UsuarioService {
 
         usuario.setNome(dto.nome());
         usuario.setLogin(dto.login());
-        usuario.setSenha(dto.senha());
+        usuario.setSenha(passwordEncoder.encode(dto.senha()));
         usuario.setPerfil(dto.perfil());
         usuario.setAtivo(dto.ativo());
 
@@ -47,13 +51,15 @@ public class UsuarioService {
         return converterParaResponse(usuarioSalvo);
     }
 
-    public UsuarioResponseDTO atualizar(Long id, UsuarioRequestDTO dto) {
+    public UsuarioResponseDTO atualizar(Long id, UsuarioUpdateDTO dto) {
         Usuario usuarioExistente = usuarioRepository.findById(id)
                 .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
 
         usuarioExistente.setNome(dto.nome());
         usuarioExistente.setLogin(dto.login());
-        usuarioExistente.setSenha(dto.senha());
+        if (dto.senha() != null && !dto.senha().isBlank()) {
+        usuarioExistente.setSenha(passwordEncoder.encode(dto.senha()));
+  }
         usuarioExistente.setPerfil(dto.perfil());
         usuarioExistente.setAtivo(dto.ativo());
 
@@ -64,9 +70,10 @@ public class UsuarioService {
 
     public void excluir(Long id) {
         Usuario usuario = usuarioRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
+            .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
 
-        usuarioRepository.delete(usuario);
+        usuario.setAtivo(false);
+        usuarioRepository.save(usuario);
     }
 
     private UsuarioResponseDTO converterParaResponse(Usuario usuario) {
