@@ -8,6 +8,7 @@ import com.chrisdev.eng.pdvediel.entity.Cliente;
 import com.chrisdev.eng.pdvediel.repository.ClienteRepository;
 import com.chrisdev.eng.pdvediel.entity.MovimentacaoEstoque;
 import com.chrisdev.eng.pdvediel.entity.TipoMovimentacao;
+import com.chrisdev.eng.pdvediel.entity.TipoItem;
 import com.chrisdev.eng.pdvediel.repository.MovimentacaoEstoqueRepository;
 import com.chrisdev.eng.pdvediel.entity.Estoque;
 import com.chrisdev.eng.pdvediel.entity.Item;
@@ -34,200 +35,190 @@ import java.util.List;
 @Service
 public class VendaService {
 
-    private static final Logger logger = LoggerFactory.getLogger(VendaService.class);
+        private static final Logger logger = LoggerFactory.getLogger(VendaService.class);
 
-    private final VendaRepository vendaRepository;
-    private final ItemVendaRepository itemVendaRepository;
-    private final ItemRepository itemRepository;
-    private final EstoqueRepository estoqueRepository;
-    private final UsuarioRepository usuarioRepository;
-    private final MovimentacaoEstoqueRepository movimentacaoEstoqueRepository;
-    private final ClienteRepository clienteRepository;
+        private final VendaRepository vendaRepository;
+        private final ItemVendaRepository itemVendaRepository;
+        private final ItemRepository itemRepository;
+        private final EstoqueRepository estoqueRepository;
+        private final UsuarioRepository usuarioRepository;
+        private final MovimentacaoEstoqueRepository movimentacaoEstoqueRepository;
+        private final ClienteRepository clienteRepository;
 
-    public VendaService(
-            VendaRepository vendaRepository,
-            ItemVendaRepository itemVendaRepository,
-            ItemRepository itemRepository,
-            EstoqueRepository estoqueRepository,
-            UsuarioRepository usuarioRepository,
-            MovimentacaoEstoqueRepository movimentacaoEstoqueRepository,
-            ClienteRepository clienteRepository) {
+        public VendaService(
+                        VendaRepository vendaRepository,
+                        ItemVendaRepository itemVendaRepository,
+                        ItemRepository itemRepository,
+                        EstoqueRepository estoqueRepository,
+                        UsuarioRepository usuarioRepository,
+                        MovimentacaoEstoqueRepository movimentacaoEstoqueRepository,
+                        ClienteRepository clienteRepository) {
 
-        this.vendaRepository = vendaRepository;
-        this.itemVendaRepository = itemVendaRepository;
-        this.itemRepository = itemRepository;
-        this.estoqueRepository = estoqueRepository;
-        this.usuarioRepository = usuarioRepository;
-        this.movimentacaoEstoqueRepository = movimentacaoEstoqueRepository;
-        this.clienteRepository = clienteRepository;
-    }
-
-    @Transactional
-    public VendaResponseDTO criar(VendaRequestDTO dto) {
-
-        logger.info("Iniciando venda para o usuário {}", dto.usuarioId());
-
-        Usuario usuario = usuarioRepository.findById(dto.usuarioId())
-                .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Usuário não encontrado"));
-
-        Cliente cliente = null;
-
-        if (dto.clienteId() != null) {
-            cliente = clienteRepository.findById(dto.clienteId())
-                    .orElseThrow(() ->
-                            new RecursoNaoEncontradoException("Cliente não encontrado"));
-
-            if (!cliente.getAtivo()) {
-                throw new RecursoNaoEncontradoException("Cliente inativo");
-            }
+                this.vendaRepository = vendaRepository;
+                this.itemVendaRepository = itemVendaRepository;
+                this.itemRepository = itemRepository;
+                this.estoqueRepository = estoqueRepository;
+                this.usuarioRepository = usuarioRepository;
+                this.movimentacaoEstoqueRepository = movimentacaoEstoqueRepository;
+                this.clienteRepository = clienteRepository;
         }
 
-        BigDecimal valorTotal = BigDecimal.ZERO;
+        @Transactional
+        public VendaResponseDTO criar(VendaRequestDTO dto) {
 
-        List<ItemVenda> itensVenda = new ArrayList<>();
+                logger.info("Iniciando venda para o usuário {}", dto.usuarioId());
 
-        for (ItemVendaRequestDTO itemDTO : dto.itens()) {
+                Usuario usuario = usuarioRepository.findById(dto.usuarioId())
+                                .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
 
-            Item item = itemRepository.findById(itemDTO.itemId())
-                    .orElseThrow(() ->
-                            new RecursoNaoEncontradoException("Item não encontrado"));
+                Cliente cliente = null;
 
-            Estoque estoque = estoqueRepository.findByItemId(item.getId())
-                    .orElseThrow(() ->
-                            new RecursoNaoEncontradoException(
-                                    "Estoque não encontrado para o item"));
+                if (dto.clienteId() != null) {
+                        cliente = clienteRepository.findById(dto.clienteId())
+                                        .orElseThrow(() -> new RecursoNaoEncontradoException("Cliente não encontrado"));
 
-            if (estoque.getQuantidade() < itemDTO.quantidade()) {
+                        if (!cliente.getAtivo()) {
+                                throw new RecursoNaoEncontradoException("Cliente inativo");
+                        }
+                }
 
-                logger.warn(
-                        "Estoque insuficiente para o item {}. Disponível: {}, solicitado: {}",
-                        item.getNome(),
-                        estoque.getQuantidade(),
-                        itemDTO.quantidade()
-                );
+                BigDecimal valorTotal = BigDecimal.ZERO;
 
-                throw new EstoqueInsuficienteException(
-                        "Estoque insuficiente para o item: " + item.getNome()
-                );
-            }
+                List<ItemVenda> itensVenda = new ArrayList<>();
 
-            BigDecimal precoUnitario = item.getPreco();
+                for (ItemVendaRequestDTO itemDTO : dto.itens()) {
 
-            BigDecimal subtotal = precoUnitario.multiply(
-                    BigDecimal.valueOf(itemDTO.quantidade())
-            );
+                        Item item = itemRepository.findById(itemDTO.itemId())
+                                        .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
-            valorTotal = valorTotal.add(subtotal);
+                        if (item.getTipo() == TipoItem.PRODUTO) {
 
-            estoque.setQuantidade(
-                    estoque.getQuantidade() - itemDTO.quantidade()
-            );
+                                Estoque estoque = estoqueRepository.findByItemId(item.getId())
+                                                .orElseThrow(() -> new RecursoNaoEncontradoException(
+                                                                "Estoque não encontrado para o produto"));
 
-            estoqueRepository.save(estoque);
+                                if (estoque.getQuantidade() < itemDTO.quantidade()) {
 
-            MovimentacaoEstoque movimentacao = new MovimentacaoEstoque();
-            movimentacao.setItem(item);
-            movimentacao.setQuantidade(itemDTO.quantidade());
-            movimentacao.setTipo(TipoMovimentacao.SAIDA);
-            movimentacao.setData(LocalDateTime.now());
-            movimentacao.setUsuario(usuario);
+                                        logger.warn(
+                                                        "Estoque insuficiente para o item {}. Disponível: {}, solicitado: {}",
+                                                        item.getNome(),
+                                                        estoque.getQuantidade(),
+                                                        itemDTO.quantidade());
 
-            movimentacaoEstoqueRepository.save(movimentacao);
+                                        throw new EstoqueInsuficienteException(
+                                                        "Estoque insuficiente para o item: " + item.getNome());
+                                }
 
-            logger.info(
-                    "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
-                    item.getNome(),
-                    itemDTO.quantidade(),
-                    subtotal
-            );
+                                estoque.setQuantidade(
+                                                estoque.getQuantidade() - itemDTO.quantidade());
 
-            ItemVenda itemVenda = new ItemVenda();
-            itemVenda.setItem(item);
-            itemVenda.setQuantidade(itemDTO.quantidade());
-            itemVenda.setPrecoUnitario(precoUnitario);
+                                estoqueRepository.save(estoque);
 
-            itensVenda.add(itemVenda);
+                                MovimentacaoEstoque movimentacao = new MovimentacaoEstoque();
+                                movimentacao.setItem(item);
+                                movimentacao.setQuantidade(itemDTO.quantidade());
+                                movimentacao.setTipo(TipoMovimentacao.SAIDA);
+                                movimentacao.setData(LocalDateTime.now());
+                                movimentacao.setUsuario(usuario);
+
+                                movimentacaoEstoqueRepository.save(movimentacao);
+                        }
+
+                        BigDecimal precoUnitario = item.getPreco();
+
+                        BigDecimal subtotal = precoUnitario.multiply(
+                                        BigDecimal.valueOf(itemDTO.quantidade()));
+
+                        valorTotal = valorTotal.add(subtotal);
+
+                        logger.info(
+                                        "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
+                                        item.getNome(),
+                                        itemDTO.quantidade(),
+                                        subtotal);
+
+                        ItemVenda itemVenda = new ItemVenda();
+                        itemVenda.setItem(item);
+                        itemVenda.setQuantidade(itemDTO.quantidade());
+                        itemVenda.setPrecoUnitario(precoUnitario);
+
+                        itensVenda.add(itemVenda);
+                }
+
+                Venda venda = new Venda();
+                venda.setData(LocalDateTime.now());
+                venda.setValorTotal(valorTotal);
+                venda.setValorRecebido(valorTotal);
+                venda.setFormaPagamento(dto.formaPagamento());
+                venda.setUsuario(usuario);
+                venda.setCliente(cliente);
+
+                Venda vendaSalva = vendaRepository.save(venda);
+
+                for (ItemVenda itemVenda : itensVenda) {
+                        itemVenda.setVenda(vendaSalva);
+                        itemVendaRepository.save(itemVenda);
+                }
+
+                logger.info(
+                                "Venda {} realizada com sucesso. Usuário: {}, valor total: {}, forma de pagamento: {}",
+                                vendaSalva.getId(),
+                                usuario.getLogin(),
+                                valorTotal,
+                                dto.formaPagamento());
+
+                return converterParaResponse(vendaSalva);
         }
 
-        Venda venda = new Venda();
-        venda.setData(LocalDateTime.now());
-        venda.setValorTotal(valorTotal);
-        venda.setValorRecebido(valorTotal);
-        venda.setFormaPagamento(dto.formaPagamento());
-        venda.setUsuario(usuario);
-        venda.setCliente(cliente);
+        public List<VendaResponseDTO> listarTodas() {
 
-        Venda vendaSalva = vendaRepository.save(venda);
+                logger.info("Listando todas as vendas");
 
-        for (ItemVenda itemVenda : itensVenda) {
-            itemVenda.setVenda(vendaSalva);
-            itemVendaRepository.save(itemVenda);
+                return vendaRepository.findAll()
+                                .stream()
+                                .map(this::converterParaResponse)
+                                .toList();
         }
 
-        logger.info(
-                "Venda {} realizada com sucesso. Usuário: {}, valor total: {}, forma de pagamento: {}",
-                vendaSalva.getId(),
-                usuario.getLogin(),
-                valorTotal,
-                dto.formaPagamento()
-        );
+        public VendaResponseDTO buscarPorId(Long id) {
 
-        return converterParaResponse(vendaSalva);
-    }
+                logger.info("Buscando venda pelo ID {}", id);
 
-    public List<VendaResponseDTO> listarTodas() {
+                Venda venda = vendaRepository.findById(id)
+                                .orElseThrow(() -> new RecursoNaoEncontradoException("Venda não encontrada"));
 
-        logger.info("Listando todas as vendas");
+                return converterParaResponse(venda);
+        }
 
-        return vendaRepository.findAll()
-                .stream()
-                .map(this::converterParaResponse)
-                .toList();
-    }
+        private VendaResponseDTO converterParaResponse(Venda venda) {
 
-    public VendaResponseDTO buscarPorId(Long id) {
+                List<ItemVendaResponseDTO> itens = itemVendaRepository
+                                .findByVendaId(venda.getId())
+                                .stream()
+                                .map(itemVenda -> {
 
-        logger.info("Buscando venda pelo ID {}", id);
+                                        BigDecimal subtotal = itemVenda.getPrecoUnitario()
+                                                        .multiply(BigDecimal.valueOf(itemVenda.getQuantidade()));
 
-        Venda venda = vendaRepository.findById(id)
-                .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Venda não encontrada"));
+                                        return new ItemVendaResponseDTO(
+                                                        itemVenda.getItem().getId(),
+                                                        itemVenda.getItem().getNome(),
+                                                        itemVenda.getQuantidade(),
+                                                        itemVenda.getPrecoUnitario(),
+                                                        subtotal);
+                                })
+                                .toList();
 
-        return converterParaResponse(venda);
-    }
-
-    private VendaResponseDTO converterParaResponse(Venda venda) {
-
-        List<ItemVendaResponseDTO> itens = itemVendaRepository
-                .findByVendaId(venda.getId())
-                .stream()
-                .map(itemVenda -> {
-
-                    BigDecimal subtotal = itemVenda.getPrecoUnitario()
-                            .multiply(BigDecimal.valueOf(itemVenda.getQuantidade()));
-
-                    return new ItemVendaResponseDTO(
-                            itemVenda.getItem().getId(),
-                            itemVenda.getItem().getNome(),
-                            itemVenda.getQuantidade(),
-                            itemVenda.getPrecoUnitario(),
-                            subtotal
-                    );
-                })
-                .toList();
-
-        return new VendaResponseDTO(
-                venda.getId(),
-                venda.getData(),
-                venda.getValorTotal(),
-                venda.getValorRecebido(),
-                venda.getFormaPagamento(),
-                venda.getUsuario().getId(),
-                venda.getUsuario().getNome(),
-                venda.getCliente() != null ? venda.getCliente().getId() : null,
-                venda.getCliente() != null ? venda.getCliente().getNome() : null,
-                itens
-        );
-    }
+                return new VendaResponseDTO(
+                                venda.getId(),
+                                venda.getData(),
+                                venda.getValorTotal(),
+                                venda.getValorRecebido(),
+                                venda.getFormaPagamento(),
+                                venda.getUsuario().getId(),
+                                venda.getUsuario().getNome(),
+                                venda.getCliente() != null ? venda.getCliente().getId() : null,
+                                venda.getCliente() != null ? venda.getCliente().getNome() : null,
+                                itens);
+        }
 }
