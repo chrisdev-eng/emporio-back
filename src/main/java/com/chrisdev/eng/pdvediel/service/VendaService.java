@@ -71,6 +71,10 @@ public class VendaService {
                 Usuario usuario = usuarioRepository.findById(dto.usuarioId())
                                 .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
 
+                if (!usuario.getAtivo()) {
+                throw new RecursoNaoEncontradoException("Usuário inativo");
+}                
+
                 Cliente cliente = null;
 
                 if (dto.clienteId() != null) {
@@ -90,7 +94,10 @@ public class VendaService {
 
                         Item item = itemRepository.findById(itemDTO.itemId())
                                         .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
-
+                        
+                        if (!item.getAtivo()) {
+                                 throw new RecursoNaoEncontradoException("Item inativo");
+}                
                         if (item.getTipo() == TipoItem.PRODUTO) {
 
                                 Estoque estoque = estoqueRepository.findByItemId(item.getId())
