@@ -2,14 +2,12 @@ package com.chrisdev.eng.pdvediel.controller;
 
 import com.chrisdev.eng.pdvediel.controller.dto.CategoriaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.CategoriaResponseDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.CategoriaUpdateDTO;
 import com.chrisdev.eng.pdvediel.service.CategoriaService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
@@ -57,7 +55,7 @@ public class CategoriaController {
     @PutMapping("/{id}")
     public ResponseEntity<CategoriaResponseDTO> atualizar(
             @PathVariable Long id,
-           @Valid @RequestBody CategoriaRequestDTO dto) {
+           @Valid @RequestBody CategoriaUpdateDTO dto) {
 
         return ResponseEntity.ok(
                 categoriaService.atualizar(id, dto)
