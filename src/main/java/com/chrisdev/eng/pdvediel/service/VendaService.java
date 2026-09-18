@@ -4,16 +4,23 @@ import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaResponseDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaResponseDTO;
+import com.chrisdev.eng.pdvediel.entity.Cliente;
 import com.chrisdev.eng.pdvediel.entity.Estoque;
 import com.chrisdev.eng.pdvediel.entity.Item;
 import com.chrisdev.eng.pdvediel.entity.ItemVenda;
+import com.chrisdev.eng.pdvediel.entity.MovimentacaoEstoque;
+import com.chrisdev.eng.pdvediel.entity.TipoItem;
+import com.chrisdev.eng.pdvediel.entity.TipoMovimentacao;
 import com.chrisdev.eng.pdvediel.entity.Usuario;
 import com.chrisdev.eng.pdvediel.entity.Venda;
 import com.chrisdev.eng.pdvediel.exception.EstoqueInsuficienteException;
 import com.chrisdev.eng.pdvediel.exception.RecursoNaoEncontradoException;
+import com.chrisdev.eng.pdvediel.exception.ValorRecebidoInsuficienteException;
+import com.chrisdev.eng.pdvediel.repository.ClienteRepository;
 import com.chrisdev.eng.pdvediel.repository.EstoqueRepository;
 import com.chrisdev.eng.pdvediel.repository.ItemRepository;
 import com.chrisdev.eng.pdvediel.repository.ItemVendaRepository;
+import com.chrisdev.eng.pdvediel.repository.MovimentacaoEstoqueRepository;
 import com.chrisdev.eng.pdvediel.repository.UsuarioRepository;
 import com.chrisdev.eng.pdvediel.repository.VendaRepository;
 import org.slf4j.Logger;
@@ -36,29 +43,50 @@ public class VendaService {
     private final ItemRepository itemRepository;
     private final EstoqueRepository estoqueRepository;
     private final UsuarioRepository usuarioRepository;
+    private final MovimentacaoEstoqueRepository movimentacaoEstoqueRepository;
+    private final ClienteRepository clienteRepository;
 
     public VendaService(
             VendaRepository vendaRepository,
             ItemVendaRepository itemVendaRepository,
             ItemRepository itemRepository,
             EstoqueRepository estoqueRepository,
-            UsuarioRepository usuarioRepository) {
+            UsuarioRepository usuarioRepository,
+            MovimentacaoEstoqueRepository movimentacaoEstoqueRepository,
+            ClienteRepository clienteRepository) {
 
         this.vendaRepository = vendaRepository;
         this.itemVendaRepository = itemVendaRepository;
         this.itemRepository = itemRepository;
         this.estoqueRepository = estoqueRepository;
         this.usuarioRepository = usuarioRepository;
+        this.movimentacaoEstoqueRepository = movimentacaoEstoqueRepository;
+        this.clienteRepository = clienteRepository;
     }
 
     @Transactional
     public VendaResponseDTO criar(VendaRequestDTO dto) {
 
         logger.info("Iniciando venda para o usuário {}", dto.usuarioId());
+        logger.info("Valor recebido informado: {}", dto.valorRecebido());
 
         Usuario usuario = usuarioRepository.findById(dto.usuarioId())
-                .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Usuário não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
+
+        if (!usuario.getAtivo()) {
+            throw new RecursoNaoEncontradoException("Usuário inativo");
+        }
+
+        Cliente cliente = null;
+
+        if (dto.clienteId() != null) {
+            cliente = clienteRepository.findById(dto.clienteId())
+                    .orElseThrow(() -> new RecursoNaoEncontradoException("Cliente não encontrado"));
+
+            if (!cliente.getAtivo()) {
+                throw new RecursoNaoEncontradoException("Cliente inativo");
+            }
+        }
 
         BigDecimal valorTotal = BigDecimal.ZERO;
 
@@ -67,48 +95,57 @@ public class VendaService {
         for (ItemVendaRequestDTO itemDTO : dto.itens()) {
 
             Item item = itemRepository.findById(itemDTO.itemId())
-                    .orElseThrow(() ->
-                            new RecursoNaoEncontradoException("Item não encontrado"));
+                    .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
 
-            Estoque estoque = estoqueRepository.findByItemId(item.getId())
-                    .orElseThrow(() ->
-                            new RecursoNaoEncontradoException(
-                                    "Estoque não encontrado para o item"));
+            if (!item.getAtivo()) {
+                throw new RecursoNaoEncontradoException("Item inativo");
+            }
 
-            if (estoque.getQuantidade() < itemDTO.quantidade()) {
+            if (item.getTipo() == TipoItem.PRODUTO) {
 
-                logger.warn(
-                        "Estoque insuficiente para o item {}. Disponível: {}, solicitado: {}",
-                        item.getNome(),
-                        estoque.getQuantidade(),
-                        itemDTO.quantidade()
-                );
+                Estoque estoque = estoqueRepository.findByItemId(item.getId())
+                        .orElseThrow(() -> new RecursoNaoEncontradoException(
+                                "Estoque não encontrado para o produto"));
 
-                throw new EstoqueInsuficienteException(
-                        "Estoque insuficiente para o item: " + item.getNome()
-                );
+                if (estoque.getQuantidade() < itemDTO.quantidade()) {
+
+                    logger.warn(
+                            "Estoque insuficiente para o item {}. Disponível: {}, solicitado: {}",
+                            item.getNome(),
+                            estoque.getQuantidade(),
+                            itemDTO.quantidade());
+
+                    throw new EstoqueInsuficienteException(
+                            "Estoque insuficiente para o item: " + item.getNome());
+                }
+
+                estoque.setQuantidade(
+                        estoque.getQuantidade() - itemDTO.quantidade());
+
+                estoqueRepository.save(estoque);
+
+                MovimentacaoEstoque movimentacao = new MovimentacaoEstoque();
+                movimentacao.setItem(item);
+                movimentacao.setQuantidade(itemDTO.quantidade());
+                movimentacao.setTipo(TipoMovimentacao.SAIDA);
+                movimentacao.setData(LocalDateTime.now());
+                movimentacao.setUsuario(usuario);
+
+                movimentacaoEstoqueRepository.save(movimentacao);
             }
 
             BigDecimal precoUnitario = item.getPreco();
 
             BigDecimal subtotal = precoUnitario.multiply(
-                    BigDecimal.valueOf(itemDTO.quantidade())
-            );
+                    BigDecimal.valueOf(itemDTO.quantidade()));
 
             valorTotal = valorTotal.add(subtotal);
-
-            estoque.setQuantidade(
-                    estoque.getQuantidade() - itemDTO.quantidade()
-            );
-
-            estoqueRepository.save(estoque);
 
             logger.info(
                     "Item {} adicionado à venda. Quantidade: {}, subtotal: {}",
                     item.getNome(),
                     itemDTO.quantidade(),
-                    subtotal
-            );
+                    subtotal);
 
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.setItem(item);
@@ -118,12 +155,18 @@ public class VendaService {
             itensVenda.add(itemVenda);
         }
 
+        if (dto.valorRecebido().compareTo(valorTotal) < 0) {
+            throw new ValorRecebidoInsuficienteException(
+                    "O valor recebido é menor que o valor total da venda");
+        }
+
         Venda venda = new Venda();
         venda.setData(LocalDateTime.now());
         venda.setValorTotal(valorTotal);
-        venda.setValorRecebido(valorTotal);
+        venda.setValorRecebido(dto.valorRecebido());
         venda.setFormaPagamento(dto.formaPagamento());
         venda.setUsuario(usuario);
+        venda.setCliente(cliente);
 
         Venda vendaSalva = vendaRepository.save(venda);
 
@@ -137,8 +180,7 @@ public class VendaService {
                 vendaSalva.getId(),
                 usuario.getLogin(),
                 valorTotal,
-                dto.formaPagamento()
-        );
+                dto.formaPagamento());
 
         return converterParaResponse(vendaSalva);
     }
@@ -158,8 +200,7 @@ public class VendaService {
         logger.info("Buscando venda pelo ID {}", id);
 
         Venda venda = vendaRepository.findById(id)
-                .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Venda não encontrada"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException("Venda não encontrada"));
 
         return converterParaResponse(venda);
     }
@@ -179,8 +220,7 @@ public class VendaService {
                             itemVenda.getItem().getNome(),
                             itemVenda.getQuantidade(),
                             itemVenda.getPrecoUnitario(),
-                            subtotal
-                    );
+                            subtotal);
                 })
                 .toList();
 
@@ -192,7 +232,8 @@ public class VendaService {
                 venda.getFormaPagamento(),
                 venda.getUsuario().getId(),
                 venda.getUsuario().getNome(),
-                itens
-        );
+                venda.getCliente() != null ? venda.getCliente().getId() : null,
+                venda.getCliente() != null ? venda.getCliente().getNome() : null,
+                itens);
     }
 }

@@ -2,9 +2,11 @@ package com.chrisdev.eng.pdvediel.controller.dto;
 
 import com.chrisdev.eng.pdvediel.entity.FormaPagamento;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public record VendaRequestDTO(
@@ -14,6 +16,12 @@ public record VendaRequestDTO(
 
         @NotNull(message = "O usuário é obrigatório")
         Long usuarioId,
+
+        Long clienteId,
+
+        @NotNull(message = "O valor recebido é obrigatório")
+        @DecimalMin(value = "0.00", message = "O valor recebido não pode ser negativo")
+        BigDecimal valorRecebido,
 
         @NotEmpty(message = "A venda deve possuir pelo menos um item")
         List<@Valid ItemVendaRequestDTO> itens

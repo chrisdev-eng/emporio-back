@@ -13,6 +13,7 @@ public record ViaCepResponse(
         String ibge,
         String gia,
         String ddd,
-        String siafi
+        String siafi,
+        Boolean erro
 ) {
 }

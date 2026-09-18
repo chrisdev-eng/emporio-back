@@ -2,6 +2,7 @@ package com.chrisdev.eng.pdvediel.controller;
 
 import com.chrisdev.eng.pdvediel.controller.dto.UsuarioRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.UsuarioResponseDTO;
+import com.chrisdev.eng.pdvediel.controller.dto.UsuarioUpdateDTO;
 import com.chrisdev.eng.pdvediel.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -49,7 +50,7 @@ public class UsuarioController {
     @PutMapping("/{id}")
     public UsuarioResponseDTO atualizar(
             @PathVariable Long id,
-            @Valid @RequestBody UsuarioRequestDTO dto) {
+            @Valid @RequestBody UsuarioUpdateDTO dto) {
 
         return usuarioService.atualizar(id, dto);
     }

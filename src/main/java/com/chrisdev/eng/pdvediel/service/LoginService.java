@@ -7,6 +7,7 @@ import com.chrisdev.eng.pdvediel.exception.CredenciaisInvalidasException;
 import com.chrisdev.eng.pdvediel.repository.UsuarioRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,9 +17,11 @@ public class LoginService {
             LoggerFactory.getLogger(LoginService.class);
 
     private final UsuarioRepository usuarioRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public LoginService(UsuarioRepository usuarioRepository) {
+    public LoginService(UsuarioRepository usuarioRepository, PasswordEncoder passwordEncoder) {
         this.usuarioRepository = usuarioRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public LoginResponseDTO autenticar(LoginRequestDTO request) {
@@ -37,7 +40,7 @@ public class LoginService {
                     );
                 });
 
-        if (!usuario.getSenha().equals(request.senha())) {
+        if (!passwordEncoder.matches(request.senha(), usuario.getSenha())) {
             logger.warn(
                     "Tentativa de login com senha inválida para o usuário {}",
                     request.login()
