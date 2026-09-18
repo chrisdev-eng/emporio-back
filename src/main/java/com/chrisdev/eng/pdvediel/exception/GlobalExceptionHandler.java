@@ -46,6 +46,17 @@ public class GlobalExceptionHandler {
         );
     }
 
+    @ExceptionHandler(ValorRecebidoInsuficienteException.class)
+    public ResponseEntity<Map<String, Object>> tratarValorRecebidoInsuficiente(
+            ValorRecebidoInsuficienteException exception) {
+
+        return criarResposta(
+                HttpStatus.BAD_REQUEST,
+                "Valor recebido insuficiente",
+                exception.getMessage()
+        );
+    }
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, Object>> tratarErroValidacao(
             MethodArgumentNotValidException exception) {
