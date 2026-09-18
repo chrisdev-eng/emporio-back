@@ -8,12 +8,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
 //Controller responsável pelas op relacionadas á categoria.
 //Disponilibiza endpoints pra cadastro, consulta, atualização e exclusão
 @RestController
+@CrossOrigin(
+        origins = "http://localhost:4200",
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS},
+        allowedHeaders = "*",
+        allowCredentials = "true"
+)
 @RequestMapping("/categorias")
 public class CategoriaController {
 

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: pdvEdiel
+
+  datasource:
+    url: jdbc:postgresql://localhost:5555/pdvediel
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
