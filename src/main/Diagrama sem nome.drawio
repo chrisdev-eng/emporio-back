@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="3">
+<mxfile host="app.diagrams.net" pages="4">
   <diagram name="ARQUITETURA" id="U-mGJPo1y9jKS7HJ0hy-">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,7 +221,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QgV7e_aDDlLHFmeFqzlI" name="CLASSES">
-    <mxGraphModel dx="1414" dy="1920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -377,6 +377,256 @@
         </mxCell>
         <mxCell id="ocmfFVhpZjhx5bVxfViF-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*" vertex="1">
           <mxGeometry height="30" width="60" x="800" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2NvVaeGE-SCWZollLQMp" name="INTERAÇÃO">
+    <mxGraphModel dx="1945" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuario&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="VendaController" vertex="1">
+          <mxGeometry height="40" width="110" x="240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="VendaService" vertex="1">
+          <mxGeometry height="40" width="110" x="430" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="VendaRepository" vertex="1">
+          <mxGeometry height="40" width="110" x="1070" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="120" as="sourcePoint" />
+            <mxPoint x="290" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-8" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-29" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.455;entryY=1.07;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="280" as="sourcePoint" />
+            <mxPoint x="260" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="realizarVenda(dadosVenda)" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-11" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-56" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.455;entryY=1.07;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="44.80000000000001" y="257" as="sourcePoint" />
+            <mxPoint x="44.80000000000001" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="289" y="140" as="sourcePoint" />
+            <mxPoint x="490" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="realizarVenda(dadosVenda)" vertex="1">
+          <mxGeometry height="30" width="60" x="340" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-14" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-30" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="485" y="370" as="sourcePoint" />
+            <mxPoint x="480" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;buscarItem(itemId)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="510" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#000000&quot; face=&quot;sans-serif&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space: pre; background-color: rgb(254, 254, 254);&quot;&gt;Item&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;verificarDisponibilidade(item, quantidade)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="270" x="470" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="184.8" as="sourcePoint" />
+            <mxPoint x="740" y="184.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ItemService" vertex="1">
+          <mxGeometry height="40" width="110" x="680" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-21" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-35" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.542;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="740" y="451.6" as="sourcePoint" />
+            <mxPoint x="740" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="740" y="230" as="sourcePoint" />
+            <mxPoint x="480" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="300" as="sourcePoint" />
+            <mxPoint x="880" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EstoqueService" vertex="1">
+          <mxGeometry height="40" width="110" x="827" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-25" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-36" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.494;entryY=1.096;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="450" as="sourcePoint" />
+            <mxPoint x="954.71" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-26" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="320" as="sourcePoint" />
+            <mxPoint x="1370" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;sans-serif&quot;&gt;&lt;span style=&quot;font-size: 13px; white-space: pre; color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;buscarEstoquePorItem(item)&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="890" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EstoqueRepository" vertex="1">
+          <mxGeometry height="40" width="110" x="1313" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;VendaController&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="230" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;VendaService&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="430" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-31" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-37" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1124.5" y="476" as="sourcePoint" />
+            <mxPoint x="1125.5" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-32" edge="1" parent="1" source="zXQ9LrmUQgqLN0y_iPor-38" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zXQ9LrmUQgqLN0y_iPor-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1368" y="520" as="sourcePoint" />
+            <mxPoint x="1360.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1370.5" y="370" as="sourcePoint" />
+            <mxPoint x="879.5" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: sans-serif; font-size: 13px; text-align: start; white-space: pre; background-color: rgb(254, 254, 254);&quot;&gt;Estoque&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="889.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ItemService" vertex="1">
+          <mxGeometry height="40" width="110" x="680" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;EstoqueService&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="827" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;VendaRepository&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="1070" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;EstoqueRepository&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="1313" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-39" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="470" as="sourcePoint" />
+            <mxPoint x="1370" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;atualizarEstoque()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="900" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-41" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1370.5" y="530" as="sourcePoint" />
+            <mxPoint x="879.5" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 13px; white-space: pre; color: light-dark(rgb(237, 237, 237), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;sans-serif&quot;&gt;estoque atualizado&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="910" y="509" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-43" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="340" as="sourcePoint" />
+            <mxPoint x="490" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-44" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;estoque disponível&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.8462" y="3" as="geometry">
+            <mxPoint x="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-45" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="400" as="sourcePoint" />
+            <mxPoint x="880" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-47" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;baixarEstoque(item, quantidade)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.605" y="1" as="geometry">
+            <mxPoint x="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-48" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="437" as="sourcePoint" />
+            <mxPoint x="490" y="437" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-49" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="confirmação" vertex="1">
+          <mxGeometry relative="1" x="0.7436" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-50" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1120" y="610" as="sourcePoint" />
+            <mxPoint x="480" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-53" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Venda salva&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.7188" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-51" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="490" as="sourcePoint" />
+            <mxPoint x="1120" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-52" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;salvar(venda)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.7999" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-54" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="630" as="sourcePoint" />
+            <mxPoint x="284" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-55" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;VendaResponseDTO&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4951" y="-2" as="geometry">
+            <mxPoint x="-48" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-56" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuario" vertex="1">
+          <mxGeometry height="60" width="30" x="30" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="610" as="sourcePoint" />
+            <mxPoint x="40" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zXQ9LrmUQgqLN0y_iPor-58" connectable="0" parent="zXQ9LrmUQgqLN0y_iPor-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;venda realizada&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.16" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
