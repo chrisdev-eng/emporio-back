@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="5">
+<mxfile host="app.diagrams.net" pages="6">
   <diagram name="ARQUITETURA" id="U-mGJPo1y9jKS7HJ0hy-">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -632,7 +632,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="4Vxx6w9uWauF9oSFe4UX" name="SEQUENCIAL">
-    <mxGraphModel dx="1378" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -882,6 +882,91 @@
         </mxCell>
         <mxCell id="5a3R_BgkksdeJkxdnLCb-67" connectable="0" parent="5a3R_BgkksdeJkxdnLCb-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Venda salva&lt;/div&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.6015" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MSlpCgvmSVeA8OSe0238" name="COMPONENTES FISICOS">
+    <mxGraphModel dx="1140" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dfzNfi-jybNggTHWWf29-1" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="INTERNET" vertex="1">
+          <mxGeometry height="80" width="120" x="450" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="USUARIO&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="399" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-2" edge="1" parent="1" source="XCRGUNdAzKr8gcx6wPPA-1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="XCRGUNdAzKr8gcx6wPPA-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="130" as="sourcePoint" />
+            <mxPoint x="410" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="utiliza" vertex="1">
+          <mxGeometry height="30" width="60" x="410" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="COMPUTADOR / NAVEGADOR&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="309" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Frontend Web" vertex="1">
+          <mxGeometry height="30" width="79" x="374.5" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-8" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Servidor da Aplicação&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="220" x="190" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-11" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="PDV Empório das chaves&lt;br&gt;Spring Boot&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="180" x="210" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Controllers" vertex="1">
+          <mxGeometry height="40" width="70" x="220" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Services" vertex="1">
+          <mxGeometry height="40" width="79" x="300" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Repositories&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="79" x="220" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-15" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="60" width="101" x="429" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ViaCEP" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-17" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.553;entryY=0.311;entryDx=0;entryDy=0;entryPerimeter=0;" target="XCRGUNdAzKr8gcx6wPPA-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="440" />
+            </Array>
+            <mxPoint x="389" y="435.0000000000001" as="sourcePoint" />
+            <mxPoint x="503.5" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-18" edge="1" parent="1" source="XCRGUNdAzKr8gcx6wPPA-11" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="XCRGUNdAzKr8gcx6wPPA-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="390" />
+            </Array>
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="496" y="453.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;JDBC / JPA&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="395" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;HTTP / REST&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="79" x="491" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-21" edge="1" parent="1" source="XCRGUNdAzKr8gcx6wPPA-4" style="endArrow=classic;html=1;rounded=0;exitX=0.374;exitY=1.015;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="XCRGUNdAzKr8gcx6wPPA-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="370" as="sourcePoint" />
+            <mxPoint x="520" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XCRGUNdAzKr8gcx6wPPA-22" connectable="0" parent="XCRGUNdAzKr8gcx6wPPA-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP / REST" vertex="1">
+          <mxGeometry relative="1" x="-0.5606" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
