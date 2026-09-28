@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="ARQUITETURA" id="U-mGJPo1y9jKS7HJ0hy-">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-9" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2dy6TRZhJLmKNFhFhs7A-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="EMPÓRIO DAS CHAVES&lt;br&gt;ARQUITETURA&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="65" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="240" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="API" vertex="1">
+          <mxGeometry height="30" width="60" x="125" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Controllers -- DTOs -- Validation" vertex="1">
+          <mxGeometry height="30" width="210" x="55" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Categoria, Cliente, Item, Estoque, Venda, Usuário, Login" vertex="1">
+          <mxGeometry height="30" width="210" x="55" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-15" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.633;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2dy6TRZhJLmKNFhFhs7A-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="397.5" y="430" as="sourcePoint" />
+            <mxPoint x="242.5" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-16" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2dy6TRZhJLmKNFhFhs7A-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="190" width="240" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SERVICE" vertex="1">
+          <mxGeometry height="30" width="60" x="125" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="CategoriaService&lt;br&gt;ClienteService -&amp;gt; CepService&lt;br&gt;ItemService&lt;br&gt;EstoqueService&lt;br&gt;VendaService&lt;br&gt;UsuarioService -&amp;gt; BCrypt&lt;br&gt;LoginService&lt;br&gt;MovimentacaoEstoqueService" vertex="1">
+          <mxGeometry height="30" width="210" x="55" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-24" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2dy6TRZhJLmKNFhFhs7A-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="125" width="240" x="-115" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-22" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2dy6TRZhJLmKNFhFhs7A-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="125" width="220" x="200" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DATA ACESS" vertex="1">
+          <mxGeometry height="30" width="80" x="-40" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="EXTERNAL INTEGRATION" vertex="1">
+          <mxGeometry height="30" width="170" x="235" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Spring Data JPA&lt;br&gt;Repositories&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="120" x="-100" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OpenFeign&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;ViaCepClient" vertex="1">
+          <mxGeometry height="70" width="120" x="220" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ViaCep" vertex="1">
+          <mxGeometry height="90" width="130" x="245" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="90" width="130" x="-60" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-26" edge="1" parent="1" source="2dy6TRZhJLmKNFhFhs7A-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2dy6TRZhJLmKNFhFhs7A-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Flyway&lt;br&gt;DB migrations" vertex="1">
+          <mxGeometry height="90" width="130" x="-60" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="2dy6TRZhJLmKNFhFhs7A-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Exceptions&lt;br&gt;&lt;br&gt;GlobalExceptionHandler&amp;nbsp;&amp;nbsp;&lt;br&gt;BCryptPasswordEncoder&lt;br&gt;Validation&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="160" x="-70" y="1000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dynwpmK_jZR2yzNkbB1N" name="PACOTE LOGICO">
+    <mxGraphModel dx="1414" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
