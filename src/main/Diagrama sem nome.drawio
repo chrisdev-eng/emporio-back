@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="6">
+<mxfile host="app.diagrams.net" pages="7">
   <diagram name="ARQUITETURA" id="U-mGJPo1y9jKS7HJ0hy-">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -889,7 +889,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MSlpCgvmSVeA8OSe0238" name="COMPONENTES FISICOS">
-    <mxGraphModel dx="1140" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -969,6 +969,79 @@
           <mxGeometry relative="1" x="-0.5606" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4Qimuk8gYdwCPI6gUK0r" name="IMPLANTAÇÃO">
+    <mxGraphModel dx="1414" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MshlqQbpSx85fpPtrtzT-1" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;COMPUTADOR DO USUARIO" vertex="1">
+          <mxGeometry height="120" width="230" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-2" parent="1" style="html=1;whiteSpace=wrap;" value="Navegador Web" vertex="1">
+          <mxGeometry height="50" width="110" x="170" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-5" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Servidor / Máquina Docker&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="400" width="320" x="70" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-6" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Container da aplicação&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="210" x="110" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-7" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;div&gt;PDV Empório das Chaves&lt;/div&gt;&lt;div&gt;Spring Boot&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="134" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-4" edge="1" parent="1" source="MshlqQbpSx85fpPtrtzT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MshlqQbpSx85fpPtrtzT-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-10" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Container do Banco" vertex="1">
+          <mxGeometry height="160" width="250" x="100" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-11" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="60" width="116" x="156" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-12" edge="1" parent="1" source="MshlqQbpSx85fpPtrtzT-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.491;entryY=0.317;entryDx=0;entryDy=0;entryPerimeter=0;" target="MshlqQbpSx85fpPtrtzT-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-13" connectable="0" parent="MshlqQbpSx85fpPtrtzT-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="JDBC / JPA" vertex="1">
+          <mxGeometry relative="1" x="-0.4172" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-14" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="INTERNET" vertex="1">
+          <mxGeometry height="80" width="120" x="470" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" target="MshlqQbpSx85fpPtrtzT-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="430" as="sourcePoint" />
+            <mxPoint x="330" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-16" connectable="0" parent="MshlqQbpSx85fpPtrtzT-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP" vertex="1">
+          <mxGeometry relative="1" x="-0.5238" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-17" edge="1" parent="1" source="MshlqQbpSx85fpPtrtzT-14" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="660" as="sourcePoint" />
+            <mxPoint x="536" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-20" connectable="0" parent="MshlqQbpSx85fpPtrtzT-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTPS" vertex="1">
+          <mxGeometry relative="1" x="0.3158" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-21" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Servidor ViaCEP" vertex="1">
+          <mxGeometry height="140" width="250" x="430" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="MshlqQbpSx85fpPtrtzT-22" parent="1" style="html=1;whiteSpace=wrap;" value="&lt;div&gt;API ViaCEP&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="470" y="830" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
