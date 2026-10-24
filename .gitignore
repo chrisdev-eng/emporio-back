@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### artefatos de build e relatorios gerados ###
+relatorio-jacoco/
+
+### diretrizes locais de trabalho ###
+AGENTS.md
