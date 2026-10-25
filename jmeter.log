@@ -1,0 +1,445 @@
+2026-10-25 19:02:19,123 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-25 19:02:19,156 INFO o.a.j.JMeter: Loading user properties from: /opt/jmeter/bin/user.properties
+2026-10-25 19:02:19,157 INFO o.a.j.JMeter: Loading system properties from: /opt/jmeter/bin/system.properties
+2026-10-25 19:02:19,165 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-25 19:02:19,165 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: java.version=21.0.13.0.2
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: os.name=Linux
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: os.version=6.18.58-1-lts
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-25 19:02:19,166 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-25 19:02:19,167 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-25 19:02:19,167 INFO o.a.j.JMeter: Available Processors =8
+2026-10-25 19:02:19,182 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-25 19:02:19,183 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-25 19:02:19,183 INFO o.a.j.JMeter: JMeterHome=/opt/jmeter
+2026-10-25 19:02:19,183 INFO o.a.j.JMeter: user.dir  =/home/hh-beep/Desktop/faculdadez/Testes/emporio-back
+2026-10-25 19:02:19,183 INFO o.a.j.JMeter: PWD       =/home/hh-beep/Desktop/faculdadez/Testes/emporio-back
+2026-10-25 19:02:19,184 INFO o.a.j.JMeter: IP: 192.168.1.18 Name: ArchTop FullName: ArchTop
+2026-10-25 19:02:19,203 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio'
+2026-10-25 19:02:19,208 INFO o.a.j.s.FileServer: Default base='/home/hh-beep/Desktop/faculdadez/Testes/emporio-back'
+2026-10-25 19:02:19,210 INFO o.a.j.s.FileServer: Set new base='/home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter'
+2026-10-25 19:02:19,615 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-25 19:02:19,655 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-25 19:02:19,660 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-25 19:02:19,666 INFO o.a.j.s.SaveService: Loading file: JMeter/Testes-Carga.jmx
+2026-10-25 19:02:19,761 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-25 19:02:19,761 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-25 19:02:19,761 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-25 19:02:19,761 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-25 19:02:19,761 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-25 19:02:19,762 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-25 19:02:19,823 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-25 19:02:19,834 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-10-25 19:02:19,834 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: JMeter/resultados.jtl
+2026-10-25 19:02:19,834 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/jmeter/bin/reportgenerator.properties
+2026-10-25 19:02:19,839 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-10-25 19:02:19,852 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-10-25 19:02:19,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-10-25 19:02:19,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-10-25 19:02:19,860 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-10-25 19:02:19,860 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-10-25 19:02:19,860 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-10-25 19:02:19,860 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-10-25 19:02:19,861 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-10-25 19:02:19,862 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-10-25 19:02:19,883 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,884 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,885 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,885 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,886 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,886 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,887 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,887 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,888 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,888 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-25 19:02:19,890 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-10-25 19:02:19,891 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-10-25 19:02:19,891 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-10-25 19:02:19,892 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-10-25 19:02:19,892 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-10-25 19:02:19,893 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-10-25 19:02:19,940 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-25 19:02:19,942 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-25 19:02:19,942 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-25 19:02:19,952 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-25 19:02:19,952 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-25 19:02:20,151 INFO o.a.j.JMeter: Running test (1792965740151)
+2026-10-25 19:02:20,189 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : GET's de Endpoints
+2026-10-25 19:02:20,189 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group GET's de Endpoints.
+2026-10-25 19:02:20,190 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-25 19:02:20,190 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=30 delayedStart=false
+2026-10-25 19:02:20,201 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-1
+2026-10-25 19:02:20,241 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-25 19:02:20,241 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Login
+2026-10-25 19:02:20,241 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Login.
+2026-10-25 19:02:20,241 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-25 19:02:20,241 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=20 ramp-up=10 delayedStart=false
+2026-10-25 19:02:20,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-1
+2026-10-25 19:02:20,255 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2026-10-25 19:02:20,255 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : busca Itens
+2026-10-25 19:02:20,256 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group busca Itens.
+2026-10-25 19:02:20,256 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-25 19:02:20,256 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=30 ramp-up=15 delayedStart=false
+2026-10-25 19:02:20,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-1
+2026-10-25 19:02:20,273 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2026-10-25 19:02:20,273 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : fluxo venda
+2026-10-25 19:02:20,273 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group fluxo venda.
+2026-10-25 19:02:20,273 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-25 19:02:20,273 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=1 ramp-up=1 delayedStart=false
+2026-10-25 19:02:20,274 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2026-10-25 19:02:20,274 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-25 19:02:20,274 INFO o.a.j.t.JMeterThread: Thread started: fluxo venda 4-1
+2026-10-25 19:02:20,303 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ArchTop
+2026-10-25 19:02:20,323 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-25 19:02:20,327 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-25 19:02:20,327 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-25 19:02:20,328 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-25 19:02:20,328 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-25 19:02:20,573 INFO o.a.j.t.JMeterThread: Thread is done: fluxo venda 4-1
+2026-10-25 19:02:20,720 INFO o.a.j.t.JMeterThread: Thread finished: fluxo venda 4-1
+2026-10-25 19:02:20,744 INFO o.a.j.t.JMeterThread: Thread started: Login 2-2
+2026-10-25 19:02:20,763 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-2
+2026-10-25 19:02:20,796 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-2
+2026-10-25 19:02:20,821 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-1
+2026-10-25 19:02:20,821 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-1
+2026-10-25 19:02:20,928 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-2
+2026-10-25 19:02:20,928 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-2
+2026-10-25 19:02:21,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-3
+2026-10-25 19:02:21,258 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-3
+2026-10-25 19:02:21,396 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-3
+2026-10-25 19:02:21,469 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-3
+2026-10-25 19:02:21,477 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-3
+2026-10-25 19:02:21,742 INFO o.a.j.t.JMeterThread: Thread started: Login 2-4
+2026-10-25 19:02:21,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-4
+2026-10-25 19:02:21,887 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-4
+2026-10-25 19:02:21,888 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-4
+2026-10-25 19:02:21,992 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-4
+2026-10-25 19:02:22,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-5
+2026-10-25 19:02:22,259 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-5
+2026-10-25 19:02:22,393 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-5
+2026-10-25 19:02:22,396 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-5
+2026-10-25 19:02:22,595 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-5
+2026-10-25 19:02:22,743 INFO o.a.j.t.JMeterThread: Thread started: Login 2-6
+2026-10-25 19:02:22,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-6
+2026-10-25 19:02:22,937 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-6
+2026-10-25 19:02:22,937 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-6
+2026-10-25 19:02:23,085 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-1
+2026-10-25 19:02:23,085 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-1
+2026-10-25 19:02:23,192 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-6
+2026-10-25 19:02:23,244 INFO o.a.j.t.JMeterThread: Thread started: Login 2-7
+2026-10-25 19:02:23,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-7
+2026-10-25 19:02:23,402 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-7
+2026-10-25 19:02:23,403 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-7
+2026-10-25 19:02:23,516 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-2
+2026-10-25 19:02:23,516 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-2
+2026-10-25 19:02:23,751 INFO o.a.j.t.JMeterThread: Thread started: Login 2-8
+2026-10-25 19:02:23,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-8
+2026-10-25 19:02:23,792 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-7
+2026-10-25 19:02:23,885 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-8
+2026-10-25 19:02:23,885 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-8
+2026-10-25 19:02:23,972 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-3
+2026-10-25 19:02:23,972 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-3
+2026-10-25 19:02:24,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-9
+2026-10-25 19:02:24,258 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-9
+2026-10-25 19:02:24,398 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-8
+2026-10-25 19:02:24,399 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-9
+2026-10-25 19:02:24,400 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-9
+2026-10-25 19:02:24,413 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-4
+2026-10-25 19:02:24,413 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-4
+2026-10-25 19:02:24,743 INFO o.a.j.t.JMeterThread: Thread started: Login 2-10
+2026-10-25 19:02:24,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-10
+2026-10-25 19:02:24,865 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-5
+2026-10-25 19:02:24,865 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-5
+2026-10-25 19:02:24,868 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-10
+2026-10-25 19:02:24,868 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-10
+2026-10-25 19:02:24,993 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-9
+2026-10-25 19:02:25,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-11
+2026-10-25 19:02:25,259 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-11
+2026-10-25 19:02:25,403 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-11
+2026-10-25 19:02:25,403 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-11
+2026-10-25 19:02:25,509 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-6
+2026-10-25 19:02:25,509 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-6
+2026-10-25 19:02:25,592 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-10
+2026-10-25 19:02:25,743 INFO o.a.j.t.JMeterThread: Thread started: Login 2-12
+2026-10-25 19:02:25,756 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-12
+2026-10-25 19:02:25,896 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-12
+2026-10-25 19:02:25,897 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-12
+2026-10-25 19:02:25,925 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-7
+2026-10-25 19:02:25,925 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-7
+2026-10-25 19:02:26,194 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-11
+2026-10-25 19:02:26,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-13
+2026-10-25 19:02:26,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-13
+2026-10-25 19:02:26,398 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-13
+2026-10-25 19:02:26,399 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-13
+2026-10-25 19:02:26,531 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-8
+2026-10-25 19:02:26,532 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-8
+2026-10-25 19:02:26,617 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-1
+2026-10-25 19:02:26,617 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-1
+2026-10-25 19:02:26,743 INFO o.a.j.t.JMeterThread: Thread started: Login 2-14
+2026-10-25 19:02:26,759 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-14
+2026-10-25 19:02:26,792 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-12
+2026-10-25 19:02:26,940 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-14
+2026-10-25 19:02:26,940 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-14
+2026-10-25 19:02:27,055 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-9
+2026-10-25 19:02:27,056 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-9
+2026-10-25 19:02:27,167 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-2
+2026-10-25 19:02:27,173 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-2
+2026-10-25 19:02:27,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-15
+2026-10-25 19:02:27,260 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-15
+2026-10-25 19:02:27,392 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-13
+2026-10-25 19:02:27,424 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-15
+2026-10-25 19:02:27,424 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-15
+2026-10-25 19:02:27,534 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-10
+2026-10-25 19:02:27,535 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-10
+2026-10-25 19:02:27,698 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-3
+2026-10-25 19:02:27,698 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-3
+2026-10-25 19:02:27,749 INFO o.a.j.t.JMeterThread: Thread started: Login 2-16
+2026-10-25 19:02:27,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-16
+2026-10-25 19:02:27,934 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-16
+2026-10-25 19:02:27,935 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-16
+2026-10-25 19:02:27,991 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-14
+2026-10-25 19:02:28,109 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-11
+2026-10-25 19:02:28,109 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-11
+2026-10-25 19:02:28,243 INFO o.a.j.t.JMeterThread: Thread started: Login 2-17
+2026-10-25 19:02:28,260 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-17
+2026-10-25 19:02:28,271 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-4
+2026-10-25 19:02:28,271 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-4
+2026-10-25 19:02:28,401 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-17
+2026-10-25 19:02:28,403 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-17
+2026-10-25 19:02:28,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-15
+2026-10-25 19:02:28,596 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-12
+2026-10-25 19:02:28,596 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-12
+2026-10-25 19:02:28,744 INFO o.a.j.t.JMeterThread: Thread started: Login 2-18
+2026-10-25 19:02:28,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-18
+2026-10-25 19:02:28,845 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-18
+2026-10-25 19:02:28,845 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-18
+2026-10-25 19:02:28,878 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-5
+2026-10-25 19:02:28,878 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-5
+2026-10-25 19:02:29,013 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-13
+2026-10-25 19:02:29,013 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-13
+2026-10-25 19:02:29,191 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-16
+2026-10-25 19:02:29,245 INFO o.a.j.t.JMeterThread: Thread started: Login 2-19
+2026-10-25 19:02:29,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-19
+2026-10-25 19:02:29,378 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-19
+2026-10-25 19:02:29,378 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-19
+2026-10-25 19:02:29,469 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-6
+2026-10-25 19:02:29,470 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-6
+2026-10-25 19:02:29,513 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-14
+2026-10-25 19:02:29,513 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-14
+2026-10-25 19:02:29,746 INFO o.a.j.t.JMeterThread: Thread started: Login 2-20
+2026-10-25 19:02:29,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-20
+2026-10-25 19:02:29,791 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-17
+2026-10-25 19:02:29,893 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-20
+2026-10-25 19:02:29,894 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-20
+2026-10-25 19:02:29,939 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-15
+2026-10-25 19:02:29,940 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-15
+2026-10-25 19:02:30,008 INFO o.a.j.r.Summariser: summary +    513 in 00:00:10 =   52.1/s Avg:    51 Min:     3 Max:   401 Err:     1 (0.19%) Active: 16 Started: 58 Finished: 42
+2026-10-25 19:02:30,064 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-7
+2026-10-25 19:02:30,064 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-7
+2026-10-25 19:02:30,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-21
+2026-10-25 19:02:30,391 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-18
+2026-10-25 19:02:30,436 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-21
+2026-10-25 19:02:30,436 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-21
+2026-10-25 19:02:30,573 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-16
+2026-10-25 19:02:30,579 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-16
+2026-10-25 19:02:30,680 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-8
+2026-10-25 19:02:30,680 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-8
+2026-10-25 19:02:30,751 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-17
+2026-10-25 19:02:30,751 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-17
+2026-10-25 19:02:30,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-22
+2026-10-25 19:02:30,910 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-22
+2026-10-25 19:02:30,913 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-22
+2026-10-25 19:02:30,992 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-19
+2026-10-25 19:02:31,236 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-9
+2026-10-25 19:02:31,236 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-9
+2026-10-25 19:02:31,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-23
+2026-10-25 19:02:31,416 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-23
+2026-10-25 19:02:31,416 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-23
+2026-10-25 19:02:31,555 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-18
+2026-10-25 19:02:31,562 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-18
+2026-10-25 19:02:31,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-20
+2026-10-25 19:02:31,757 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-24
+2026-10-25 19:02:31,821 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-19
+2026-10-25 19:02:31,821 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-19
+2026-10-25 19:02:31,838 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-24
+2026-10-25 19:02:31,839 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-24
+2026-10-25 19:02:31,862 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-10
+2026-10-25 19:02:31,862 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-10
+2026-10-25 19:02:32,191 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-21
+2026-10-25 19:02:32,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-25
+2026-10-25 19:02:32,393 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-25
+2026-10-25 19:02:32,399 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-25
+2026-10-25 19:02:32,437 INFO o.a.j.t.JMeterThread: Thread is done: Login 2-20
+2026-10-25 19:02:32,438 INFO o.a.j.t.JMeterThread: Thread finished: Login 2-20
+2026-10-25 19:02:32,493 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-11
+2026-10-25 19:02:32,494 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-11
+2026-10-25 19:02:32,766 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-26
+2026-10-25 19:02:32,793 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-22
+2026-10-25 19:02:32,916 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-26
+2026-10-25 19:02:32,916 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-26
+2026-10-25 19:02:33,028 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-12
+2026-10-25 19:02:33,028 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-12
+2026-10-25 19:02:33,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-27
+2026-10-25 19:02:33,347 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-27
+2026-10-25 19:02:33,347 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-27
+2026-10-25 19:02:33,391 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-23
+2026-10-25 19:02:33,611 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-13
+2026-10-25 19:02:33,614 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-13
+2026-10-25 19:02:33,759 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-28
+2026-10-25 19:02:33,882 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-28
+2026-10-25 19:02:33,930 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-28
+2026-10-25 19:02:33,992 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-24
+2026-10-25 19:02:34,228 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-14
+2026-10-25 19:02:34,230 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-14
+2026-10-25 19:02:34,257 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-29
+2026-10-25 19:02:34,365 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-29
+2026-10-25 19:02:34,365 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-29
+2026-10-25 19:02:34,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-25
+2026-10-25 19:02:34,759 INFO o.a.j.t.JMeterThread: Thread started: busca Itens 3-30
+2026-10-25 19:02:34,795 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-15
+2026-10-25 19:02:34,795 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-15
+2026-10-25 19:02:34,858 INFO o.a.j.t.JMeterThread: Thread is done: busca Itens 3-30
+2026-10-25 19:02:34,858 INFO o.a.j.t.JMeterThread: Thread finished: busca Itens 3-30
+2026-10-25 19:02:35,191 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-26
+2026-10-25 19:02:35,451 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-16
+2026-10-25 19:02:35,452 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-16
+2026-10-25 19:02:35,792 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-27
+2026-10-25 19:02:36,047 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-17
+2026-10-25 19:02:36,048 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-17
+2026-10-25 19:02:36,392 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-28
+2026-10-25 19:02:36,676 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-18
+2026-10-25 19:02:36,676 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-18
+2026-10-25 19:02:36,991 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-29
+2026-10-25 19:02:37,300 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-19
+2026-10-25 19:02:37,301 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-19
+2026-10-25 19:02:37,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-30
+2026-10-25 19:02:37,823 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-20
+2026-10-25 19:02:37,823 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-20
+2026-10-25 19:02:38,191 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-31
+2026-10-25 19:02:38,437 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-21
+2026-10-25 19:02:38,438 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-21
+2026-10-25 19:02:38,791 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-32
+2026-10-25 19:02:38,949 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-22
+2026-10-25 19:02:38,949 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-22
+2026-10-25 19:02:39,392 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-33
+2026-10-25 19:02:39,576 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-23
+2026-10-25 19:02:39,576 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-23
+2026-10-25 19:02:39,991 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-34
+2026-10-25 19:02:40,167 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-24
+2026-10-25 19:02:40,167 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-24
+2026-10-25 19:02:40,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-35
+2026-10-25 19:02:40,786 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-25
+2026-10-25 19:02:40,786 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-25
+2026-10-25 19:02:41,191 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-36
+2026-10-25 19:02:41,356 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-26
+2026-10-25 19:02:41,356 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-26
+2026-10-25 19:02:41,791 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-37
+2026-10-25 19:02:41,946 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-27
+2026-10-25 19:02:41,947 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-27
+2026-10-25 19:02:42,393 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-38
+2026-10-25 19:02:42,555 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-28
+2026-10-25 19:02:42,555 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-28
+2026-10-25 19:02:42,992 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-39
+2026-10-25 19:02:43,146 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-29
+2026-10-25 19:02:43,147 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-29
+2026-10-25 19:02:43,592 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-40
+2026-10-25 19:02:43,740 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-30
+2026-10-25 19:02:43,741 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-30
+2026-10-25 19:02:44,194 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-41
+2026-10-25 19:02:44,343 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-31
+2026-10-25 19:02:44,349 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-31
+2026-10-25 19:02:44,791 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-42
+2026-10-25 19:02:44,938 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-32
+2026-10-25 19:02:44,939 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-32
+2026-10-25 19:02:45,392 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-43
+2026-10-25 19:02:45,534 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-33
+2026-10-25 19:02:45,534 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-33
+2026-10-25 19:02:45,991 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-44
+2026-10-25 19:02:46,280 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-34
+2026-10-25 19:02:46,281 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-34
+2026-10-25 19:02:46,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-45
+2026-10-25 19:02:46,894 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-35
+2026-10-25 19:02:46,895 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-35
+2026-10-25 19:02:47,196 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-46
+2026-10-25 19:02:47,352 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-36
+2026-10-25 19:02:47,353 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-36
+2026-10-25 19:02:47,792 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-47
+2026-10-25 19:02:47,971 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-37
+2026-10-25 19:02:47,971 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-37
+2026-10-25 19:02:48,392 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-48
+2026-10-25 19:02:48,553 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-38
+2026-10-25 19:02:48,557 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-38
+2026-10-25 19:02:48,996 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-49
+2026-10-25 19:02:49,140 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-39
+2026-10-25 19:02:49,141 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-39
+2026-10-25 19:02:49,591 INFO o.a.j.t.JMeterThread: Thread started: GET's de Endpoints 1-50
+2026-10-25 19:02:49,755 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-40
+2026-10-25 19:02:49,756 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-40
+2026-10-25 19:02:50,349 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-41
+2026-10-25 19:02:50,349 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-41
+2026-10-25 19:02:50,951 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-42
+2026-10-25 19:02:50,951 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-42
+2026-10-25 19:02:51,569 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-43
+2026-10-25 19:02:51,570 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-43
+2026-10-25 19:02:52,151 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-44
+2026-10-25 19:02:52,151 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-44
+2026-10-25 19:02:52,776 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-45
+2026-10-25 19:02:52,776 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-45
+2026-10-25 19:02:53,352 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-46
+2026-10-25 19:02:53,352 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-46
+2026-10-25 19:02:53,925 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-47
+2026-10-25 19:02:53,943 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-47
+2026-10-25 19:02:54,529 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-48
+2026-10-25 19:02:54,530 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-48
+2026-10-25 19:02:55,128 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-49
+2026-10-25 19:02:55,128 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-49
+2026-10-25 19:02:55,711 INFO o.a.j.t.JMeterThread: Thread is done: GET's de Endpoints 1-50
+2026-10-25 19:02:55,712 INFO o.a.j.t.JMeterThread: Thread finished: GET's de Endpoints 1-50
+2026-10-25 19:02:55,712 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-25 19:02:55,714 INFO o.a.j.r.Summariser: summary +    888 in 00:00:26 =   34.5/s Avg:    11 Min:     2 Max:   280 Err:     0 (0.00%) Active: 0 Started: 101 Finished: 101
+2026-10-25 19:02:55,715 INFO o.a.j.r.Summariser: summary =   1401 in 00:00:36 =   39.4/s Avg:    26 Min:     2 Max:   401 Err:     1 (0.07%)
+2026-10-25 19:02:55,718 INFO o.a.j.JMeter: Generating Dashboard
+2026-10-25 19:02:55,719 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-10-25 19:02:55,773 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-10-25 19:02:56,338 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-10-25 19:02:56,339 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-10-25 19:02:56,378 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-10-25 19:02:56,378 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-10-25 19:02:56,406 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-10-25 19:02:56,410 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-10-25 19:02:56,410 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-10-25 19:02:56,410 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-10-25 19:02:56,544 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-10-25 19:02:56,569 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-10-25 19:02:56,570 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-10-25 19:02:56,570 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-10-25 19:02:56,659 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-10-25 19:02:56,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 9807 samples
+2026-10-25 19:02:56,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-10-25 19:02:56,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-10-25 19:02:56,662 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-10-25 19:02:56,662 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-10-25 19:02:56,663 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-10-25 19:02:56,663 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-10-25 19:02:56,674 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-10-25 19:02:56,676 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-10-25 19:02:56,676 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-10-25 19:02:56,676 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-10-25 19:02:56,677 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 21015 samples
+2026-10-25 19:02:56,677 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 4203 samples
+2026-10-25 19:02:56,677 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 1401 samples
+2026-10-25 19:02:56,678 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 1401 samples produced in 820ms on channel 0
+2026-10-25 19:02:56,678 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-10-25 19:02:57,011 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-10-25 19:02:57,011 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-10-25 19:02:57,012 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-10-25 19:02:57,013 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-10-25 19:02:57,014 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio/statistics.json
+2026-10-25 19:02:57,128 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-10-25 19:02:57,134 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio
+2026-10-25 19:02:57,788 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio, creating folder structure
+2026-10-25 19:02:57,794 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/jmeter/bin/report-template' to '/home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio', got message: /home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio, found non empty folder with following content [/home/hh-beep/Desktop/faculdadez/Testes/emporio-back/JMeter/relatorio/statistics.json], will be ignored
+2026-10-25 19:02:58,524 INFO o.a.j.JMeter: Dashboard generated

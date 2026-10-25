@@ -1,0 +1,1402 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1792965740507,59,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,1,4,http://localhost:8080/categorias,33,0,5
+1792965740475,91,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,66,0,37
+1792965740475,91,criar venda,500,,fluxo venda 4-1,text,false,,262,153,1,4,http://localhost:8080/,65,0,38
+1792965740572,14,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965740587,9,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965740600,11,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965740612,12,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965740630,111,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,3,http://localhost:8080/itens/buscar?nome=Chave,111,0,0
+1792965740742,20,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,1,4,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965740764,18,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,2,5,http://localhost:8080/itens/buscar?nome=Chave,18,0,1
+1792965740763,26,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,2,5,http://localhost:8080/itens/buscar?nome=Chave,26,0,0
+1792965740783,13,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,2,6,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965740791,20,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,2,6,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965740804,13,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,2,6,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965740813,7,Pegar chave,200,,busca Itens 3-1,text,true,,891,176,2,6,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965740818,18,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965740837,13,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965740855,17,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965740544,345,Login Admin,200,,Login 2-1,text,true,,325,218,2,5,http://localhost:8080/login,345,0,23
+1792965740874,18,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,2,5,http://localhost:8080/itens,18,0,0
+1792965740873,20,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965740896,9,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965740906,8,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965740914,13,Pegar chave,200,,busca Itens 3-2,text,true,,891,176,1,5,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965741098,19,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,2,4,http://localhost:8080/categorias,19,0,12
+1792965741194,10,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,2,4,http://localhost:8080/categorias,10,0,0
+1792965741050,194,Login Admin,200,,Login 2-2,text,true,,325,218,2,4,http://localhost:8080/login,194,0,2
+1792965741262,13,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,13,0,1
+1792965741277,17,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965741299,19,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,19,0,0
+1792965741319,20,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965741340,15,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965741365,21,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,6,http://localhost:8080/itens/buscar?nome=Chave,21,0,0
+1792965741389,16,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,7,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965741406,13,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,7,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965741419,26,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,3,7,http://localhost:8080/itens,26,0,0
+1792965741419,30,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,7,http://localhost:8080/itens/buscar?nome=Chave,27,0,0
+1792965741192,266,Login Admin,200,,Login 2-1,text,true,,325,218,3,7,http://localhost:8080/login,266,0,0
+1792965741450,13,Pegar chave,200,,busca Itens 3-3,text,true,,891,176,1,7,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965741506,22,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,3,6,http://localhost:8080/itens,22,0,0
+1792965741697,17,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,3,6,http://localhost:8080/categorias,17,0,1
+1792965741758,11,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,3,8,http://localhost:8080/categorias,11,0,0
+1792965741758,16,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,16,0,1
+1792965741557,223,Login Admin,200,,Login 2-3,text,true,,325,218,4,8,http://localhost:8080/login,223,0,5
+1792965741775,19,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,19,0,0
+1792965741548,245,Login Admin,200,,Login 2-2,text,true,,325,218,4,8,http://localhost:8080/login,245,0,0
+1792965741794,7,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965741802,7,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965741809,11,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965741821,10,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965741832,7,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,3,8,http://localhost:8080/categorias,7,0,0
+1792965741838,10,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965741849,7,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965741858,9,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965741868,18,Pegar chave,200,,busca Itens 3-4,text,true,,891,176,1,8,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965741776,203,Login Admin,200,,Login 2-1,text,true,,325,218,4,7,http://localhost:8080/login,203,0,0
+1792965742015,17,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,4,8,http://localhost:8080/itens,17,0,0
+1792965742070,25,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,4,8,http://localhost:8080/itens,25,0,0
+1792965742145,8,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,4,8,http://localhost:8080/itens,8,0,0
+1792965742046,194,Login Admin,200,,Login 2-4,text,true,,325,218,4,8,http://localhost:8080/login,194,0,6
+1792965742260,15,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,15,0,1
+1792965742276,8,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965742081,208,Login Admin,200,,Login 2-3,text,true,,325,218,5,10,http://localhost:8080/login,208,0,0
+1792965742284,20,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965742296,12,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,4,10,http://localhost:8080/categorias,12,0,1
+1792965742305,14,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965742105,214,Login Admin,200,,Login 2-2,text,true,,325,218,5,10,http://localhost:8080/login,214,0,0
+1792965742320,20,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965742339,5,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,4,10,http://localhost:8080/categorias,5,0,0
+1792965742341,17,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965742359,7,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965742367,10,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965742377,7,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965742384,7,Pegar chave,200,,busca Itens 3-5,text,true,,891,176,1,10,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965742396,16,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,4,9,http://localhost:8080/categorias,16,0,0
+1792965742461,74,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,4,9,http://localhost:8080/categorias,74,0,0
+1792965742280,273,Login Admin,200,,Login 2-1,text,true,,325,218,5,9,http://localhost:8080/login,273,0,0
+1792965742609,10,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,5,10,http://localhost:8080/itens,10,0,0
+1792965742652,19,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,5,10,http://localhost:8080/itens,18,0,0
+1792965742714,14,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,5,10,http://localhost:8080/itens,14,0,0
+1792965742553,220,Login Admin,200,,Login 2-5,text,true,,325,218,6,12,http://localhost:8080/login,220,0,6
+1792965742758,15,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,15,0,1
+1792965742778,12,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965742791,7,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965742799,10,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965742819,10,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965742836,14,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,5,12,http://localhost:8080/itens,14,0,0
+1792965742831,22,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,22,0,0
+1792965742854,22,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,22,0,0
+1792965742542,339,Login Admin,200,,Login 2-4,text,true,,325,218,6,12,http://localhost:8080/login,339,0,0
+1792965742612,289,Login Admin,200,,Login 2-3,text,true,,325,218,6,12,http://localhost:8080/login,285,0,0
+1792965742897,5,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,5,12,http://localhost:8080/categorias,5,0,1
+1792965742877,25,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,25,0,0
+1792965742909,16,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965742922,13,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,5,12,http://localhost:8080/categorias,12,0,0
+1792965742926,10,Pegar chave,200,,busca Itens 3-6,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965742624,342,Login Admin,200,,Login 2-2,text,true,,325,218,6,11,http://localhost:8080/login,342,0,0
+1792965742972,4,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,5,11,http://localhost:8080/categorias,4,0,0
+1792965743035,6,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,5,11,http://localhost:8080/categorias,5,0,0
+1792965742854,230,Login Admin,200,,Login 2-1,text,true,,325,218,6,11,http://localhost:8080/login,230,0,0
+1792965743151,8,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,5,10,http://localhost:8080/categorias,7,0,0
+1792965743203,13,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,6,11,http://localhost:8080/itens,13,0,0
+1792965743077,174,Login Admin,200,,Login 2-5,text,true,,325,218,6,12,http://localhost:8080/login,174,0,0
+1792965743059,194,Login Admin,200,,Login 2-6,text,true,,325,218,6,12,http://localhost:8080/login,194,0,1
+1792965743241,12,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,6,12,http://localhost:8080/itens,12,0,0
+1792965743258,15,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,15,0,7
+1792965743277,16,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,6,13,http://localhost:8080/itens,16,0,0
+1792965743273,20,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965743294,12,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965743307,10,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965743322,8,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965743330,11,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965743343,11,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,6,13,http://localhost:8080/itens,11,0,0
+1792965743348,7,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965743356,23,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,23,0,0
+1792965743382,9,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965743392,9,Pegar chave,200,,busca Itens 3-7,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965743182,225,Login Admin,200,,Login 2-4,text,true,,325,218,6,12,http://localhost:8080/login,225,0,0
+1792965743206,263,Login Admin,200,,Login 2-3,text,true,,325,218,6,12,http://localhost:8080/login,263,0,0
+1792965743462,11,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,6,12,http://localhost:8080/itens,11,0,0
+1792965743496,7,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,6,12,http://localhost:8080/categorias,6,0,1
+1792965743268,246,Login Admin,200,,Login 2-2,text,true,,325,218,6,12,http://localhost:8080/login,246,0,0
+1792965743517,4,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,6,11,http://localhost:8080/categorias,4,0,0
+1792965743555,7,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,6,11,http://localhost:8080/categorias,7,0,0
+1792965743600,7,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,6,11,http://localhost:8080/categorias,7,0,0
+1792965743656,12,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,6,11,http://localhost:8080/categorias,12,0,0
+1792965743554,193,Login Admin,200,,Login 2-6,text,true,,325,218,5,11,http://localhost:8080/login,192,0,0
+1792965743552,197,Login Admin,200,,Login 2-5,text,true,,325,218,5,11,http://localhost:8080/login,197,0,0
+1792965743545,204,Login Admin,200,,Login 2-7,text,true,,325,218,5,11,http://localhost:8080/login,204,0,7
+1792965743760,9,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,9,0,1
+1792965743770,12,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965743774,11,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,6,13,http://localhost:8080/categorias,11,0,0
+1792965743783,10,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965743793,7,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965743801,13,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965743805,19,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,7,14,http://localhost:8080/itens,19,0,0
+1792965743815,13,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965743824,13,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,7,14,http://localhost:8080/itens,13,0,0
+1792965743829,17,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965743852,7,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965743860,8,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965743863,7,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,7,14,http://localhost:8080/itens,7,0,0
+1792965743872,12,Pegar chave,200,,busca Itens 3-8,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965743907,6,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,7,13,http://localhost:8080/itens,6,0,0
+1792965743709,214,Login Admin,200,,Login 2-4,text,true,,325,218,6,13,http://localhost:8080/login,214,0,0
+1792965743770,201,Login Admin,200,,Login 2-3,text,true,,325,218,6,13,http://localhost:8080/login,201,0,0
+1792965743968,10,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,7,12,http://localhost:8080/itens,9,0,0
+1792965744094,10,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,7,12,http://localhost:8080/categorias,10,0,4
+1792965744089,23,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,7,12,http://localhost:8080/itens,23,0,0
+1792965744127,7,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,7,12,http://localhost:8080/categorias,7,0,0
+1792965744138,7,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,7,12,http://localhost:8080/categorias,6,0,0
+1792965744171,5,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,7,12,http://localhost:8080/categorias,5,0,0
+1792965744214,7,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,7,12,http://localhost:8080/categorias,7,0,0
+1792965744051,206,Login Admin,200,,Login 2-7,text,true,,325,218,6,13,http://localhost:8080/login,206,0,0
+1792965744060,198,Login Admin,200,,Login 2-8,text,true,,325,218,6,14,http://localhost:8080/login,198,0,1
+1792965744050,209,Login Admin,200,,Login 2-5,text,true,,325,218,6,14,http://localhost:8080/login,209,0,0
+1792965744259,12,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,12,0,1
+1792965744271,15,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965744279,13,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,7,14,http://localhost:8080/categorias,13,0,0
+1792965744049,255,Login Admin,200,,Login 2-6,text,true,,325,218,6,14,http://localhost:8080/login,255,0,0
+1792965744287,20,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965744312,10,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965744322,16,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965744338,14,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965744352,14,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965744366,11,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965744378,9,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965744390,7,Pegar chave,200,,busca Itens 3-9,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965744223,188,Login Admin,200,,Login 2-4,text,true,,325,218,6,14,http://localhost:8080/login,188,0,0
+1792965744419,8,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,8,13,http://localhost:8080/itens,8,0,0
+1792965744418,13,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,8,13,http://localhost:8080/categorias,13,0,0
+1792965744435,7,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,8,13,http://localhost:8080/itens,6,0,0
+1792965744455,6,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,8,13,http://localhost:8080/itens,6,0,0
+1792965744479,6,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,8,13,http://localhost:8080/itens,5,0,0
+1792965744522,17,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,8,13,http://localhost:8080/itens,16,0,0
+1792965744593,7,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,8,13,http://localhost:8080/itens,7,0,0
+1792965744699,11,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,8,13,http://localhost:8080/categorias,11,0,6
+1792965744731,13,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,8,14,http://localhost:8080/categorias,6,0,0
+1792965744732,19,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,8,14,http://localhost:8080/itens,19,0,0
+1792965744560,195,Login Admin,200,,Login 2-7,text,true,,325,218,6,14,http://localhost:8080/login,195,0,0
+1792965744743,13,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,8,14,http://localhost:8080/categorias,13,0,0
+1792965744762,4,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,8,15,http://localhost:8080/categorias,3,0,0
+1792965744765,9,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,9,0,1
+1792965744774,10,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965744785,9,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965744786,10,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,8,15,http://localhost:8080/categorias,6,0,0
+1792965744794,6,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965744801,9,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965744546,265,Login Admin,200,,Login 2-9,text,true,,325,218,6,15,http://localhost:8080/login,265,0,1
+1792965744814,11,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965744825,8,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965744834,11,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965744840,9,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,8,15,http://localhost:8080/categorias,9,0,0
+1792965744846,10,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,15,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965744560,304,Login Admin,200,,Login 2-5,text,true,,325,218,6,15,http://localhost:8080/login,303,0,0
+1792965744857,10,Pegar chave,200,,busca Itens 3-10,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965744908,7,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,8,13,http://localhost:8080/categorias,6,0,0
+1792965744558,381,Login Admin,200,,Login 2-8,text,true,,325,218,5,13,http://localhost:8080/login,381,0,0
+1792965744605,369,Login Admin,200,,Login 2-6,text,true,,325,218,5,13,http://localhost:8080/login,369,0,0
+1792965745011,7,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,9,14,http://localhost:8080/itens,7,0,0
+1792965745052,13,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,9,14,http://localhost:8080/categorias,13,0,0
+1792965745049,19,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,9,14,http://localhost:8080/itens,19,0,0
+1792965745064,22,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,9,14,http://localhost:8080/itens,22,0,0
+1792965745068,20,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,9,14,http://localhost:8080/itens,20,0,0
+1792965745097,12,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,9,14,http://localhost:8080/itens,12,0,0
+1792965745151,9,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,9,14,http://localhost:8080/itens,9,0,0
+1792965745218,8,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,9,14,http://localhost:8080/itens,8,0,0
+1792965745045,194,Login Admin,200,,Login 2-10,text,true,,325,218,5,14,http://localhost:8080/login,193,0,1
+1792965745259,22,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,22,0,11
+1792965745112,182,Login Admin,200,,Login 2-9,text,true,,325,218,6,16,http://localhost:8080/login,182,0,0
+1792965745061,238,Login Admin,200,,Login 2-7,text,true,,325,218,6,16,http://localhost:8080/login,237,0,0
+1792965745299,6,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,9,16,http://localhost:8080/categorias,5,0,1
+1792965745302,8,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965745311,8,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965745319,4,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,9,16,http://localhost:8080/categorias,4,0,0
+1792965745321,14,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965745335,17,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965745353,12,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965745367,6,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,9,16,http://localhost:8080/itens,6,0,0
+1792965745367,12,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965745373,11,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,9,16,http://localhost:8080/categorias,11,0,0
+1792965745380,6,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965745386,6,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965745393,7,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,9,16,http://localhost:8080/categorias,7,0,0
+1792965745393,10,Pegar chave,200,,busca Itens 3-11,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965745393,40,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,9,15,http://localhost:8080/categorias,40,0,0
+1792965745411,39,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,9,15,http://localhost:8080/categorias,39,0,0
+1792965745465,7,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,9,15,http://localhost:8080/categorias,7,0,0
+1792965745245,228,Login Admin,200,,Login 2-8,text,true,,325,218,6,15,http://localhost:8080/login,228,0,0
+1792965745275,233,Login Admin,200,,Login 2-6,text,true,,325,218,6,15,http://localhost:8080/login,233,0,0
+1792965745530,7,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,9,14,http://localhost:8080/categorias,6,0,0
+1792965745608,8,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,10,15,http://localhost:8080/itens,8,0,0
+1792965745625,12,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,10,15,http://localhost:8080/itens,12,0,0
+1792965745674,10,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,10,15,http://localhost:8080/categorias,10,0,0
+1792965745687,17,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,10,15,http://localhost:8080/itens,17,0,0
+1792965745702,14,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,10,15,http://localhost:8080/itens,14,0,0
+1792965745736,13,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,10,16,http://localhost:8080/itens,13,0,0
+1792965745751,7,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,10,17,http://localhost:8080/itens,7,0,0
+1792965745758,17,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,17,0,8
+1792965745776,30,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,30,0,0
+1792965745776,43,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,10,17,http://localhost:8080/itens,43,0,0
+1792965745807,16,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965745823,9,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965745832,8,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965745551,292,Login Admin,200,,Login 2-11,text,true,,325,218,6,17,http://localhost:8080/login,287,0,8
+1792965745837,11,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,10,17,http://localhost:8080/itens,11,0,0
+1792965745542,308,Login Admin,200,,Login 2-10,text,true,,325,218,6,17,http://localhost:8080/login,308,0,0
+1792965745840,13,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965745853,6,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965745860,13,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965745873,6,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965745880,16,Pegar chave,200,,busca Itens 3-12,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965745901,7,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,16,http://localhost:8080/categorias,5,0,1
+1792965745600,325,Login Admin,200,,Login 2-7,text,true,,325,218,6,16,http://localhost:8080/login,325,0,0
+1792965745917,9,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,16,http://localhost:8080/categorias,7,0,0
+1792965745603,334,Login Admin,200,,Login 2-9,text,true,,325,218,5,15,http://localhost:8080/login,333,0,0
+1792965745939,5,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965745990,9,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,10,15,http://localhost:8080/itens,9,0,0
+1792965746005,3,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,15,http://localhost:8080/categorias,3,0,0
+1792965745775,246,Login Admin,200,,Login 2-8,text,true,,325,218,5,15,http://localhost:8080/login,246,0,0
+1792965746017,4,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,10,15,http://localhost:8080/categorias,3,0,0
+1792965746050,4,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,15,http://localhost:8080/categorias,3,0,0
+1792965746059,4,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,10,15,http://localhost:8080/categorias,4,0,0
+1792965746120,9,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,10,15,http://localhost:8080/categorias,9,0,0
+1792965746156,3,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,10,15,http://localhost:8080/categorias,3,0,0
+1792965746213,6,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,16,http://localhost:8080/itens,6,0,0
+1792965746048,177,Login Admin,200,,Login 2-12,text,true,,325,218,5,16,http://localhost:8080/login,177,0,2
+1792965746229,9,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,16,http://localhost:8080/itens,9,0,0
+1792965746244,21,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,18,http://localhost:8080/itens,21,0,0
+1792965746259,24,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,24,0,5
+1792965746284,10,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965746300,8,GET categorias,200,,GET's de Endpoints 1-1,text,true,,423,163,11,18,http://localhost:8080/categorias,8,0,0
+1792965746294,14,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965746309,18,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,18,http://localhost:8080/itens,17,0,0
+1792965746309,18,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965746327,9,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,11,18,http://localhost:8080/itens,9,0,0
+1792965746147,198,Login Admin,200,,Login 2-11,text,true,,325,218,6,18,http://localhost:8080/login,197,0,0
+1792965746338,10,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965746151,199,Login Admin,200,,Login 2-10,text,true,,325,218,6,18,http://localhost:8080/login,199,0,0
+1792965746348,8,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965746357,8,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,18,http://localhost:8080/itens,8,0,0
+1792965746356,13,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965746370,6,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965746376,12,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,11,18,http://localhost:8080/itens,12,0,0
+1792965746377,12,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965746389,9,Pegar chave,200,,busca Itens 3-13,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965746430,5,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,11,17,http://localhost:8080/itens,5,0,0
+1792965746460,26,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,11,17,http://localhost:8080/itens,26,0,0
+1792965746237,266,Login Admin,200,,Login 2-9,text,true,,325,218,6,17,http://localhost:8080/login,266,0,0
+1792965746497,11,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,11,17,http://localhost:8080/categorias,11,0,5
+1792965746521,8,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,11,17,http://localhost:8080/categorias,8,0,0
+1792965746326,205,Login Admin,200,,Login 2-8,text,true,,325,218,6,17,http://localhost:8080/login,205,0,0
+1792965746539,10,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,11,16,http://localhost:8080/categorias,10,0,0
+1792965746567,5,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,11,16,http://localhost:8080/categorias,5,0,0
+1792965746609,8,GET Itens,200,,GET's de Endpoints 1-1,text,true,,1222,158,11,16,http://localhost:8080/itens,8,0,0
+1792965746629,5,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965746647,16,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,10,15,http://localhost:8080/categorias,16,0,0
+1792965746666,8,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,15,http://localhost:8080/categorias,4,0,0
+1792965746689,9,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,10,15,http://localhost:8080/categorias,9,0,0
+1792965746736,13,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,10,16,http://localhost:8080/categorias,13,0,0
+1792965746546,206,Login Admin,200,,Login 2-13,text,true,,325,218,6,16,http://localhost:8080/login,206,0,0
+1792965746765,61,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,61,0,0
+1792965746529,298,Login Admin,200,,Login 2-12,text,true,,325,218,6,18,http://localhost:8080/login,298,0,0
+1792965746787,53,GET categorias,200,,GET's de Endpoints 1-2,text,true,,423,163,11,18,http://localhost:8080/categorias,52,0,0
+1792965746810,33,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,18,http://localhost:8080/itens,33,0,0
+1792965746827,32,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,31,0,0
+1792965746831,33,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,18,http://localhost:8080/itens,33,0,0
+1792965746859,7,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965746852,16,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,18,http://localhost:8080/itens,15,0,0
+1792965746867,10,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965746878,12,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965746880,24,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,18,http://localhost:8080/itens,24,0,0
+1792965746891,16,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965746651,257,Login Admin,200,,Login 2-10,text,true,,325,218,6,18,http://localhost:8080/login,257,0,0
+1792965746907,10,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965746917,9,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965746927,6,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965746933,7,Pegar chave,200,,busca Itens 3-14,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965746935,13,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,18,http://localhost:8080/itens,13,0,0
+1792965746649,302,Login Admin,200,,Login 2-11,text,true,,325,218,6,17,http://localhost:8080/login,302,0,0
+1792965746964,9,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,11,17,http://localhost:8080/itens,9,0,0
+1792965746975,11,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,17,http://localhost:8080/itens,11,0,0
+1792965747002,8,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,11,17,http://localhost:8080/itens,8,0,0
+1792965746804,251,Login Admin,200,,Login 2-9,text,true,,325,218,6,17,http://localhost:8080/login,251,0,0
+1792965747053,18,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,11,16,http://localhost:8080/itens,18,0,0
+1792965747098,12,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,11,16,http://localhost:8080/categorias,12,0,8
+1792965747143,20,GET Itens,200,,GET's de Endpoints 1-2,text,true,,1222,158,11,16,http://localhost:8080/itens,20,0,0
+1792965747144,22,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,11,16,http://localhost:8080/categorias,22,0,0
+1792965747164,9,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,11,16,http://localhost:8080/categorias,9,0,0
+1792965747168,8,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,15,http://localhost:8080/categorias,8,0,0
+1792965747205,5,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965747254,16,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,17,http://localhost:8080/categorias,16,0,0
+1792965747262,20,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,20,0,1
+1792965747277,14,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,10,17,http://localhost:8080/categorias,13,0,0
+1792965747285,15,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965747288,18,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,17,http://localhost:8080/categorias,18,0,0
+1792965747301,20,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965747316,17,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,10,17,http://localhost:8080/categorias,17,0,0
+1792965747321,16,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965747346,9,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965747355,9,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965747046,323,Login Admin,200,,Login 2-14,text,true,,325,218,6,17,http://localhost:8080/login,323,0,1
+1792965747053,323,Login Admin,200,,Login 2-13,text,true,,325,218,6,17,http://localhost:8080/login,323,0,0
+1792965747365,16,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965747372,10,GET categorias,200,,GET's de Endpoints 1-3,text,true,,423,163,10,17,http://localhost:8080/categorias,10,0,0
+1792965747381,12,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965747400,9,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965747411,11,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,18,http://localhost:8080/itens,11,0,0
+1792965747410,14,Pegar chave,200,,busca Itens 3-15,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965747474,18,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,17,http://localhost:8080/itens,18,0,0
+1792965747259,234,Login Admin,200,,Login 2-11,text,true,,325,218,6,17,http://localhost:8080/login,234,0,0
+1792965747475,20,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,17,http://localhost:8080/itens,20,0,0
+1792965747477,24,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,17,http://localhost:8080/itens,24,0,0
+1792965747129,401,Login Admin,200,,Login 2-12,text,true,,325,218,6,17,http://localhost:8080/login,401,0,0
+1792965747213,321,Login Admin,200,,Login 2-10,text,true,,325,218,6,17,http://localhost:8080/login,320,0,0
+1792965747525,17,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,16,http://localhost:8080/itens,17,0,0
+1792965747575,7,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,16,http://localhost:8080/itens,7,0,0
+1792965747615,6,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,16,http://localhost:8080/itens,6,0,0
+1792965747629,8,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,11,16,http://localhost:8080/itens,8,0,0
+1792965747634,6,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,11,16,http://localhost:8080/itens,6,0,0
+1792965747684,13,GET Itens,200,,GET's de Endpoints 1-3,text,true,,1222,158,11,16,http://localhost:8080/itens,13,0,0
+1792965747706,10,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,15,http://localhost:8080/categorias,10,0,1
+1792965747726,7,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,15,http://localhost:8080/categorias,7,0,0
+1792965747762,13,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,13,0,1
+1792965747776,5,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965747782,9,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965747548,249,Login Admin,200,,Login 2-15,text,true,,325,218,6,17,http://localhost:8080/login,249,0,2
+1792965747796,15,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965747802,16,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,17,http://localhost:8080/categorias,16,0,0
+1792965747796,25,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,17,http://localhost:8080/categorias,24,0,0
+1792965747803,20,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,17,http://localhost:8080/categorias,20,0,0
+1792965747812,18,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965747830,13,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965747843,23,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,17,http://localhost:8080/categorias,23,0,0
+1792965747850,33,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,33,0,0
+1792965747884,6,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,17,http://localhost:8080/categorias,6,0,0
+1792965747883,26,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,26,0,0
+1792965747910,11,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965747921,9,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,17,http://localhost:8080/categorias,9,0,0
+1792965747923,11,Pegar chave,200,,busca Itens 3-16,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965747670,270,Login Admin,200,,Login 2-14,text,true,,325,218,6,16,http://localhost:8080/login,269,0,0
+1792965747943,9,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,10,16,http://localhost:8080/categorias,9,0,0
+1792965747946,7,GET categorias,200,,GET's de Endpoints 1-4,text,true,,423,163,10,16,http://localhost:8080/categorias,6,0,0
+1792965747676,331,Login Admin,200,,Login 2-13,text,true,,325,218,6,17,http://localhost:8080/login,330,0,0
+1792965748020,10,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,17,http://localhost:8080/itens,10,0,0
+1792965748036,11,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,17,http://localhost:8080/itens,11,0,0
+1792965747794,315,Login Admin,200,,Login 2-11,text,true,,325,218,6,17,http://localhost:8080/login,314,0,0
+1792965747831,284,Login Admin,200,,Login 2-12,text,true,,325,218,5,16,http://localhost:8080/login,284,0,0
+1792965748123,12,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,16,http://localhost:8080/itens,12,0,0
+1792965748119,20,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,16,http://localhost:8080/itens,20,0,0
+1792965748124,20,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,16,http://localhost:8080/itens,20,0,0
+1792965748167,12,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,16,http://localhost:8080/itens,12,0,0
+1792965748193,9,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,16,http://localhost:8080/itens,9,0,0
+1792965748231,9,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,16,http://localhost:8080/itens,9,0,0
+1792965748253,11,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,11,18,http://localhost:8080/itens,11,0,0
+1792965748256,15,GET Itens,200,,GET's de Endpoints 1-4,text,true,,1222,158,11,18,http://localhost:8080/itens,15,0,0
+1792965748264,20,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,20,0,13
+1792965748294,8,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,17,http://localhost:8080/categorias,8,0,0
+1792965748292,12,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965748052,258,Login Admin,200,,Login 2-16,text,true,,325,218,6,17,http://localhost:8080/login,258,0,2
+1792965748304,10,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965748315,14,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965748331,17,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,17,http://localhost:8080/categorias,17,0,0
+1792965748097,251,Login Admin,200,,Login 2-15,text,true,,325,218,6,17,http://localhost:8080/login,251,0,0
+1792965748347,13,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,17,http://localhost:8080/categorias,13,0,0
+1792965748345,18,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965748363,6,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748370,6,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748376,6,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748382,10,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965748393,8,Pegar chave,200,,busca Itens 3-17,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965748437,6,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,16,http://localhost:8080/categorias,5,0,0
+1792965748439,12,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,16,http://localhost:8080/categorias,12,0,0
+1792965748445,7,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,16,http://localhost:8080/categorias,7,0,0
+1792965748244,216,Login Admin,200,,Login 2-14,text,true,,325,218,6,16,http://localhost:8080/login,216,0,0
+1792965748479,4,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,16,http://localhost:8080/categorias,4,0,0
+1792965748502,9,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,16,http://localhost:8080/categorias,9,0,0
+1792965748307,222,Login Admin,200,,Login 2-13,text,true,,325,218,6,16,http://localhost:8080/login,222,0,0
+1792965748546,3,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,16,http://localhost:8080/categorias,3,0,0
+1792965748566,4,GET categorias,200,,GET's de Endpoints 1-5,text,true,,423,163,10,16,http://localhost:8080/categorias,4,0,0
+1792965748416,180,Login Admin,200,,Login 2-12,text,true,,325,218,6,17,http://localhost:8080/login,180,0,0
+1792965748603,7,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,16,http://localhost:8080/itens,7,0,0
+1792965748652,5,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,16,http://localhost:8080/itens,5,0,0
+1792965748662,7,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,16,http://localhost:8080/itens,7,0,0
+1792965748557,174,Login Admin,200,,Login 2-17,text,true,,325,218,5,16,http://localhost:8080/login,174,0,1
+1792965748743,5,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,17,http://localhost:8080/itens,5,0,0
+1792965748751,7,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,17,http://localhost:8080/itens,7,0,0
+1792965748755,5,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,18,http://localhost:8080/itens,5,0,0
+1792965748760,6,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748767,10,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965748778,10,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965748786,9,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,18,http://localhost:8080/itens,9,0,0
+1792965748789,8,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965748798,7,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965748805,7,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965748812,6,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,18,http://localhost:8080/itens,6,0,0
+1792965748612,207,Login Admin,200,,Login 2-16,text,true,,325,218,6,18,http://localhost:8080/login,207,0,0
+1792965748813,10,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965748824,6,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748830,6,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965748649,192,Login Admin,200,,Login 2-15,text,true,,325,218,6,18,http://localhost:8080/login,190,0,0
+1792965748837,8,Pegar chave,200,,busca Itens 3-18,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965748850,5,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,17,http://localhost:8080/itens,5,0,0
+1792965748873,5,GET Itens,200,,GET's de Endpoints 1-5,text,true,,1222,158,11,17,http://localhost:8080/itens,5,0,0
+1792965748893,14,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,16,http://localhost:8080/categorias,14,0,1
+1792965748911,12,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,16,http://localhost:8080/categorias,11,0,0
+1792965748959,10,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,16,http://localhost:8080/categorias,5,0,0
+1792965748766,203,Login Admin,200,,Login 2-14,text,true,,325,218,6,16,http://localhost:8080/login,203,0,0
+1792965748972,4,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,16,http://localhost:8080/categorias,4,0,0
+1792965748830,182,Login Admin,200,,Login 2-13,text,true,,325,218,6,16,http://localhost:8080/login,182,0,0
+1792965749049,7,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965749061,4,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,15,http://localhost:8080/categorias,4,0,0
+1792965749059,6,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965749096,5,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965749119,9,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,15,http://localhost:8080/categorias,7,0,0
+1792965749156,7,GET categorias,200,,GET's de Endpoints 1-6,text,true,,423,163,10,15,http://localhost:8080/categorias,7,0,0
+1792965749207,7,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,16,http://localhost:8080/itens,7,0,0
+1792965749032,184,Login Admin,200,,Login 2-17,text,true,,325,218,5,16,http://localhost:8080/login,184,0,0
+1792965749226,9,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,16,http://localhost:8080/itens,8,0,0
+1792965749046,219,Login Admin,200,,Login 2-18,text,true,,325,218,6,18,http://localhost:8080/login,219,0,1
+1792965749259,16,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,16,0,6
+1792965749270,7,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,18,http://localhost:8080/itens,7,0,0
+1792965749279,13,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,18,http://localhost:8080/itens,13,0,0
+1792965749275,21,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,21,0,0
+1792965749297,9,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965749306,7,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965749313,9,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965749323,10,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965749333,10,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965749343,13,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965749356,9,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965749365,7,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,18,http://localhost:8080/itens,7,0,0
+1792965749366,12,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,18,http://localhost:8080/itens,12,0,0
+1792965749368,10,Pegar chave,200,,busca Itens 3-19,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965749356,23,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,17,http://localhost:8080/itens,23,0,0
+1792965749141,257,Login Admin,200,,Login 2-15,text,true,,325,218,6,17,http://localhost:8080/login,257,0,0
+1792965749123,277,Login Admin,200,,Login 2-16,text,true,,325,218,6,17,http://localhost:8080/login,277,0,0
+1792965749402,9,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,17,http://localhost:8080/itens,8,0,0
+1792965749429,8,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,17,http://localhost:8080/itens,8,0,0
+1792965749465,4,GET Itens,200,,GET's de Endpoints 1-6,text,true,,1222,158,11,17,http://localhost:8080/itens,4,0,0
+1792965749494,5,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,16,http://localhost:8080/categorias,5,0,0
+1792965749270,242,Login Admin,200,,Login 2-14,text,true,,325,218,6,16,http://localhost:8080/login,242,0,0
+1792965749515,8,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,15,http://localhost:8080/categorias,8,0,0
+1792965749539,3,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,15,http://localhost:8080/categorias,3,0,0
+1792965749580,16,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,15,http://localhost:8080/categorias,16,0,0
+1792965749598,6,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965749673,8,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,15,http://localhost:8080/categorias,7,0,0
+1792965749679,5,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965749681,5,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965749517,200,Login Admin,200,,Login 2-17,text,true,,325,218,5,15,http://localhost:8080/login,200,0,0
+1792965749713,7,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965749739,9,GET categorias,200,,GET's de Endpoints 1-7,text,true,,423,163,10,16,http://localhost:8080/categorias,9,0,0
+1792965749546,207,Login Admin,200,,Login 2-19,text,true,,325,218,6,16,http://localhost:8080/login,207,0,5
+1792965749763,18,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965749782,6,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965749789,11,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965749800,7,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965749800,12,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,18,http://localhost:8080/itens,12,0,0
+1792965749808,12,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965749824,11,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,18,http://localhost:8080/itens,11,0,0
+1792965749820,18,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965749838,11,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965749850,14,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,14,0,0
+1792965749843,31,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,18,http://localhost:8080/itens,31,0,0
+1792965749865,15,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965749881,12,Pegar chave,200,,busca Itens 3-20,text,true,,891,176,1,18,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965749569,325,Login Admin,200,,Login 2-18,text,true,,325,218,6,18,http://localhost:8080/login,325,0,0
+1792965749903,6,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,17,http://localhost:8080/itens,5,0,0
+1792965749904,9,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,17,http://localhost:8080/itens,9,0,0
+1792965749699,240,Login Admin,200,,Login 2-15,text,true,,325,218,6,17,http://localhost:8080/login,240,0,0
+1792965749703,291,Login Admin,200,,Login 2-16,text,true,,325,218,5,16,http://localhost:8080/login,290,0,0
+1792965749983,13,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,16,http://localhost:8080/itens,13,0,0
+1792965749994,10,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,16,http://localhost:8080/itens,10,0,0
+1792965749996,8,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,16,http://localhost:8080/itens,8,0,0
+1792965750020,20,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,16,http://localhost:8080/itens,20,0,0
+1792965750049,14,GET Itens,200,,GET's de Endpoints 1-7,text,true,,1222,158,11,16,http://localhost:8080/itens,14,0,0
+1792965750094,19,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,15,http://localhost:8080/categorias,19,0,11
+1792965750113,7,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965750136,7,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965750175,5,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,15,http://localhost:8080/categorias,5,0,0
+1792965750209,6,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,15,http://localhost:8080/categorias,6,0,0
+1792965750215,7,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,15,http://localhost:8080/categorias,7,0,0
+1792965750018,217,Login Admin,200,,Login 2-17,text,true,,325,218,5,15,http://localhost:8080/login,217,0,0
+1792965750263,15,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,15,0,4
+1792965750055,244,Login Admin,200,,Login 2-19,text,true,,325,218,5,16,http://localhost:8080/login,244,0,0
+1792965750283,18,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,18,0,0
+1792965750296,8,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,16,http://localhost:8080/categorias,8,0,0
+1792965750301,16,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965750305,14,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,16,http://localhost:8080/categorias,14,0,0
+1792965750051,280,Login Admin,200,,Login 2-20,text,true,,325,218,5,16,http://localhost:8080/login,279,0,1
+1792965750319,12,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,16,http://localhost:8080/categorias,8,0,0
+1792965750317,15,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965750332,20,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965750348,17,GET categorias,200,,GET's de Endpoints 1-8,text,true,,423,163,10,16,http://localhost:8080/categorias,10,0,0
+1792965750352,19,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,19,0,0
+1792965750372,17,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,16,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965750395,12,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965750408,16,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965750415,17,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,17,http://localhost:8080/itens,17,0,0
+1792965750424,10,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,17,http://localhost:8080/itens,10,0,0
+1792965750425,11,Pegar chave,200,,busca Itens 3-21,text,true,,891,176,1,17,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965750196,242,Login Admin,200,,Login 2-18,text,true,,325,218,5,16,http://localhost:8080/login,242,0,0
+1792965750446,12,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,16,http://localhost:8080/itens,12,0,0
+1792965750482,14,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,16,http://localhost:8080/itens,14,0,0
+1792965750516,5,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,16,http://localhost:8080/itens,4,0,0
+1792965750522,6,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,16,http://localhost:8080/itens,6,0,0
+1792965750323,250,Login Admin,200,,Login 2-16,text,true,,325,218,5,16,http://localhost:8080/login,249,0,0
+1792965750608,8,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,15,http://localhost:8080/itens,8,0,0
+1792965750619,6,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,15,http://localhost:8080/itens,6,0,0
+1792965750632,11,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,15,http://localhost:8080/itens,11,0,0
+1792965750665,11,GET Itens,200,,GET's de Endpoints 1-8,text,true,,1222,158,11,15,http://localhost:8080/itens,11,0,0
+1792965750701,8,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,14,http://localhost:8080/categorias,8,0,1
+1792965750734,6,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,14,http://localhost:8080/categorias,4,0,0
+1792965750733,10,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,14,http://localhost:8080/categorias,10,0,0
+1792965750537,214,Login Admin,200,,Login 2-17,text,true,,325,218,4,14,http://localhost:8080/login,213,0,0
+1792965750764,19,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,14,http://localhost:8080/categorias,19,0,0
+1792965750759,24,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,24,0,4
+1792965750783,22,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,22,0,0
+1792965750805,4,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,14,http://localhost:8080/categorias,4,0,0
+1792965750603,209,Login Admin,200,,Login 2-19,text,true,,325,218,3,14,http://localhost:8080/login,209,0,0
+1792965750805,10,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965750816,5,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965750821,10,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,14,http://localhost:8080/categorias,6,0,0
+1792965750829,22,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,14,http://localhost:8080/categorias,22,0,0
+1792965750825,28,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,28,0,0
+1792965750853,17,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,17,0,0
+1792965750871,13,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965750633,258,Login Admin,200,,Login 2-20,text,true,,325,218,3,14,http://localhost:8080/login,258,0,0
+1792965750885,7,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965750892,8,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965750900,9,Pegar chave,200,,busca Itens 3-22,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965750917,3,GET categorias,200,,GET's de Endpoints 1-9,text,true,,423,163,10,13,http://localhost:8080/categorias,3,0,0
+1792965750926,6,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,13,http://localhost:8080/categorias,6,0,0
+1792965750943,14,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,13,http://localhost:8080/categorias,14,0,0
+1792965750739,259,Login Admin,200,,Login 2-18,text,true,,325,218,3,14,http://localhost:8080/login,259,0,0
+1792965751010,9,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,14,http://localhost:8080/itens,9,0,0
+1792965751040,9,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,14,http://localhost:8080/itens,9,0,0
+1792965751044,8,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,14,http://localhost:8080/itens,8,0,0
+1792965751083,5,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,14,http://localhost:8080/itens,5,0,0
+1792965751110,8,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,14,http://localhost:8080/itens,8,0,0
+1792965751132,6,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,14,http://localhost:8080/itens,6,0,0
+1792965751151,9,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,14,http://localhost:8080/itens,9,0,0
+1792965751221,7,GET Itens,200,,GET's de Endpoints 1-9,text,true,,1222,158,11,14,http://localhost:8080/itens,7,0,0
+1792965751236,15,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,10,13,http://localhost:8080/itens,15,0,0
+1792965751258,6,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,10,13,http://localhost:8080/itens,6,0,0
+1792965751267,17,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,17,0,9
+1792965751284,10,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965751294,11,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,14,http://localhost:8080/categorias,11,0,1
+1792965751113,228,Login Admin,200,,Login 2-19,text,true,,325,218,3,14,http://localhost:8080/login,228,0,0
+1792965751320,23,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,14,http://localhost:8080/categorias,23,0,0
+1792965751294,49,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,49,0,0
+1792965751349,3,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,14,http://localhost:8080/categorias,3,0,0
+1792965751343,14,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965751357,13,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965751352,19,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,14,http://localhost:8080/categorias,17,0,0
+1792965751370,9,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965751379,7,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965751389,10,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,14,http://localhost:8080/categorias,10,0,0
+1792965751386,15,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965751401,5,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965751407,9,Pegar chave,200,,busca Itens 3-23,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965751419,14,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,13,http://localhost:8080/categorias,14,0,0
+1792965751191,244,Login Admin,200,,Login 2-20,text,true,,325,218,3,13,http://localhost:8080/login,244,0,0
+1792965751439,9,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,13,http://localhost:8080/categorias,9,0,0
+1792965751463,4,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,13,http://localhost:8080/categorias,4,0,0
+1792965751299,256,Login Admin,200,,Login 2-18,text,true,,325,218,3,13,http://localhost:8080/login,256,0,0
+1792965751551,6,GET categorias,200,,GET's de Endpoints 1-10,text,true,,423,163,10,13,http://localhost:8080/categorias,6,0,0
+1792965751565,7,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,12,http://localhost:8080/categorias,7,0,0
+1792965751606,5,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,13,http://localhost:8080/itens,5,0,0
+1792965751643,7,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,13,http://localhost:8080/itens,7,0,0
+1792965751653,7,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,13,http://localhost:8080/itens,7,0,0
+1792965751672,8,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,13,http://localhost:8080/itens,8,0,0
+1792965751700,5,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,13,http://localhost:8080/itens,5,0,0
+1792965751739,8,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,13,http://localhost:8080/itens,8,0,0
+1792965751748,6,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,13,http://localhost:8080/itens,6,0,0
+1792965751759,7,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,1
+1792965751767,7,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965751767,12,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,14,http://localhost:8080/itens,12,0,0
+1792965751775,7,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965751782,6,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965751789,7,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965751796,6,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965751802,4,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,14,http://localhost:8080/itens/buscar?nome=Chave,4,0,0
+1792965751641,180,Login Admin,200,,Login 2-19,text,true,,325,218,2,14,http://localhost:8080/login,180,0,0
+1792965751807,16,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965751823,5,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965751829,9,Pegar chave,200,,busca Itens 3-24,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965751858,4,GET Itens,200,,GET's de Endpoints 1-10,text,true,,1222,158,11,12,http://localhost:8080/itens,4,0,0
+1792965751873,8,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,10,11,http://localhost:8080/itens,8,0,0
+1792965751893,4,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,1
+1792965751736,179,Login Admin,200,,Login 2-20,text,true,,325,218,1,11,http://localhost:8080/login,179,0,0
+1792965751912,3,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,11,http://localhost:8080/categorias,3,0,0
+1792965751950,3,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,11,http://localhost:8080/categorias,3,0,0
+1792965751961,4,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,0
+1792965751981,3,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,11,http://localhost:8080/categorias,3,0,0
+1792965752009,4,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,0
+1792965752049,5,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,0
+1792965752055,7,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,11,http://localhost:8080/categorias,7,0,0
+1792965752080,4,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,11,http://localhost:8080/categorias,3,0,0
+1792965752182,5,GET categorias,200,,GET's de Endpoints 1-11,text,true,,423,163,10,11,http://localhost:8080/categorias,5,0,0
+1792965752199,6,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,12,http://localhost:8080/itens,6,0,0
+1792965752216,8,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,12,http://localhost:8080/itens,8,0,0
+1792965752256,10,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,13,http://localhost:8080/itens,10,0,0
+1792965752261,15,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,15,0,1
+1792965752267,14,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,13,http://localhost:8080/itens,14,0,0
+1792965752277,7,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965752285,6,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,13,http://localhost:8080/itens,6,0,0
+1792965752284,12,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965752297,8,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965752305,22,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,22,0,0
+1792965752315,17,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,13,http://localhost:8080/itens,17,0,0
+1792965752328,11,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965752339,15,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,15,0,0
+1792965752354,17,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,13,http://localhost:8080/itens,17,0,0
+1792965752355,20,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965752363,12,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,13,http://localhost:8080/itens,12,0,0
+1792965752375,10,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965752385,8,Pegar chave,200,,busca Itens 3-25,text,true,,891,176,1,13,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965752387,18,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,12,http://localhost:8080/itens,18,0,0
+1792965752216,219,Login Admin,200,,Login 2-20,text,true,,325,218,1,12,http://localhost:8080/login,219,0,0
+1792965752488,5,GET Itens,200,,GET's de Endpoints 1-11,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965752493,4,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,1
+1792965752505,7,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965752526,4,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965752567,7,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965752581,4,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965752591,4,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965752633,6,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965752671,3,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965752676,2,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965752708,14,GET categorias,200,,GET's de Endpoints 1-12,text,true,,423,163,10,10,http://localhost:8080/categorias,14,0,0
+1792965752780,9,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,9,0,1
+1792965752799,13,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,12,http://localhost:8080/itens,13,0,0
+1792965752793,20,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,20,0,0
+1792965752812,8,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,12,http://localhost:8080/itens,8,0,0
+1792965752813,9,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965752823,12,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965752830,10,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,12,http://localhost:8080/itens,10,0,0
+1792965752835,21,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,21,0,0
+1792965752857,12,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965752870,5,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965752875,6,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,12,http://localhost:8080/itens,5,0,0
+1792965752886,6,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,12,http://localhost:8080/itens,5,0,0
+1792965752876,16,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965752892,9,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965752899,11,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,12,http://localhost:8080/itens,11,0,0
+1792965752904,11,Pegar chave,200,,busca Itens 3-26,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965752940,15,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965752976,5,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965752979,13,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965753023,5,GET Itens,200,,GET's de Endpoints 1-12,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753095,4,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,1
+1792965753114,4,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965753121,4,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965753141,11,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,11,0,0
+1792965753181,5,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965753192,4,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965753211,4,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965753255,4,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,0
+1792965753260,7,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,7,0,1
+1792965753268,5,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965753273,8,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965753282,5,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,11,http://localhost:8080/categorias,4,0,0
+1792965753286,16,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965753296,9,GET categorias,200,,GET's de Endpoints 1-13,text,true,,423,163,10,11,http://localhost:8080/categorias,9,0,0
+1792965753303,6,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965753310,13,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965753323,5,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965753329,5,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965753334,8,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965753343,4,Pegar chave,200,,busca Itens 3-27,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,4,0,0
+1792965753399,7,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965753418,7,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965753425,6,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965753452,5,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753486,5,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753496,5,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753516,5,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753559,5,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965753587,6,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965753607,4,GET Itens,200,,GET's de Endpoints 1-13,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965753693,13,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,12,0,7
+1792965753707,4,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965753726,8,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965753731,6,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965753761,23,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,23,0,1
+1792965753758,17,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,11,http://localhost:8080/categorias,17,0,0
+1792965753784,9,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965753791,5,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,11,http://localhost:8080/categorias,5,0,0
+1792965753794,8,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965753806,17,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,11,http://localhost:8080/categorias,17,0,0
+1792965753802,21,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,21,0,0
+1792965753829,6,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,11,http://localhost:8080/categorias,6,0,0
+1792965753824,11,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965753835,13,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,13,0,0
+1792965753849,6,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965753855,9,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,9,0,0
+1792965753864,8,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,11,http://localhost:8080/categorias,8,0,0
+1792965753864,11,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965753875,7,Pegar chave,200,,busca Itens 3-28,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965753894,6,GET categorias,200,,GET's de Endpoints 1-14,text,true,,423,163,10,11,http://localhost:8080/categorias,5,0,0
+1792965754009,13,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965754012,13,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965754037,6,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965754036,11,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965754088,7,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965754097,8,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965754123,7,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965754136,11,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965754173,6,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965754201,23,GET Itens,200,,GET's de Endpoints 1-14,text,true,,1222,158,11,11,http://localhost:8080/itens,23,0,0
+1792965754259,28,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,28,0,9
+1792965754287,6,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754294,10,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965754305,8,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,8,0,0
+1792965754313,7,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965754307,13,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,11,http://localhost:8080/categorias,12,0,2
+1792965754321,11,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965754327,5,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,11,http://localhost:8080/categorias,5,0,0
+1792965754322,11,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,11,http://localhost:8080/categorias,11,0,0
+1792965754332,12,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,12,0,0
+1792965754345,8,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,11,http://localhost:8080/categorias,8,0,0
+1792965754347,6,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754348,9,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,11,http://localhost:8080/categorias,9,0,0
+1792965754354,5,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,5,0,0
+1792965754359,6,Pegar chave,200,,busca Itens 3-29,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754396,6,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965754412,6,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965754431,3,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965754447,5,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965754483,6,GET categorias,200,,GET's de Endpoints 1-15,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965754622,8,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965754633,9,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965754634,14,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,14,0,0
+1792965754659,72,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,72,0,0
+1792965754656,76,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,76,0,0
+1792965754731,14,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,11,http://localhost:8080/itens,14,0,0
+1792965754732,19,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,11,http://localhost:8080/itens,19,0,0
+1792965754737,15,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,11,http://localhost:8080/itens,15,0,0
+1792965754754,9,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,12,http://localhost:8080/itens,9,0,0
+1792965754766,7,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,7,0,2
+1792965754773,7,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965754782,7,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965754789,6,GET Itens,200,,GET's de Endpoints 1-15,text,true,,1222,158,11,12,http://localhost:8080/itens,6,0,0
+1792965754790,11,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,12,http://localhost:8080/itens/buscar?nome=Chave,11,0,0
+1792965754803,6,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754810,10,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,10,0,0
+1792965754820,6,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754827,16,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,16,0,0
+1792965754844,6,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,6,0,0
+1792965754850,8,Pegar chave,200,,busca Itens 3-30,text,true,,891,176,1,11,http://localhost:8080/itens/buscar?nome=Chave,7,0,0
+1792965754912,17,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,17,0,13
+1792965754939,4,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965754942,4,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965754948,6,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965755033,4,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965755033,5,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965755052,5,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965755047,10,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,10,0,0
+1792965755053,8,GET categorias,200,,GET's de Endpoints 1-16,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965755063,7,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965755234,18,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,18,0,0
+1792965755249,13,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965755249,13,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965755255,24,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,24,0,0
+1792965755338,24,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,24,0,0
+1792965755349,20,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,20,0,0
+1792965755371,61,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,11,http://localhost:8080/itens,61,0,0
+1792965755373,66,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,11,http://localhost:8080/itens,66,0,0
+1792965755377,74,GET Itens,200,,GET's de Endpoints 1-16,text,true,,1222,158,11,11,http://localhost:8080/itens,74,0,0
+1792965755377,76,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,10,10,http://localhost:8080/itens,76,0,0
+1792965755494,11,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,11,0,1
+1792965755553,2,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965755562,5,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965755563,6,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965755579,9,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965755663,4,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965755670,4,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965755732,6,GET categorias,200,,GET's de Endpoints 1-17,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965755740,6,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965755753,8,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965755805,8,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965755859,10,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965755870,7,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965755868,12,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965755888,10,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965755967,10,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965755975,9,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965756039,8,GET Itens,200,,GET's de Endpoints 1-17,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965756047,17,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,10,10,http://localhost:8080/itens,17,0,0
+1792965756062,9,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,10,10,http://localhost:8080/itens,9,0,0
+1792965756094,15,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,12,0,4
+1792965756114,6,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965756170,5,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965756178,7,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965756180,12,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,12,0,0
+1792965756198,6,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965756278,8,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965756285,7,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965756365,6,GET categorias,200,,GET's de Endpoints 1-18,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965756372,5,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965756410,5,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965756421,5,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965756475,5,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965756486,4,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965756492,4,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965756505,6,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965756587,12,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965756593,7,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965756672,4,GET Itens,200,,GET's de Endpoints 1-18,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965756679,5,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,10,10,http://localhost:8080/itens,5,0,0
+1792965756696,5,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,1
+1792965756715,4,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965756729,10,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965756781,4,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965756793,4,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965756797,3,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965756811,5,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965756900,3,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965756901,4,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965756986,4,GET categorias,200,,GET's de Endpoints 1-19,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965757004,6,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965757020,4,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757040,5,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965757086,6,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965757097,5,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965757100,6,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965757117,6,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965757204,6,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965757205,10,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965757291,9,GET Itens,200,,GET's de Endpoints 1-19,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965757294,10,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,10,0,3
+1792965757310,4,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757324,4,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965757346,6,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965757393,3,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757403,4,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965757407,3,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757423,4,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965757510,3,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757516,3,GET categorias,200,,GET's de Endpoints 1-20,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757604,5,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965757614,4,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757628,5,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965757653,5,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965757696,4,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757707,4,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757710,4,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757727,4,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757814,4,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757819,4,GET Itens,200,,GET's de Endpoints 1-20,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965757893,6,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,1
+1792965757909,4,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965757919,6,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965757933,4,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965757958,11,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,11,0,0
+1792965758003,4,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965758015,6,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965758016,7,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965758033,5,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965758118,13,GET categorias,200,,GET's de Endpoints 1-21,text,true,,423,163,10,10,http://localhost:8080/categorias,12,0,0
+1792965758200,9,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965758214,8,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965758225,10,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965758237,9,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965758269,17,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,17,0,0
+1792965758307,7,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965758323,7,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965758323,9,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965758343,8,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965758431,6,GET Itens,200,,GET's de Endpoints 1-21,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965758497,29,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,29,0,6
+1792965758522,10,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965758526,6,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965758546,10,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,10,0,0
+1792965758553,3,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965758593,3,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965758615,8,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965758633,3,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965758636,3,GET categorias,200,,GET's de Endpoints 1-22,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965758652,6,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965758827,6,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965758833,4,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965758837,4,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965758857,15,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,15,0,0
+1792965758857,17,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,17,0,0
+1792965758897,6,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965758937,5,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965758923,23,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,23,0,0
+1792965758945,4,GET Itens,200,,GET's de Endpoints 1-22,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965758958,4,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965759093,17,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,17,0,7
+1792965759133,5,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965759138,4,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759143,9,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965759174,9,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965759176,7,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965759203,4,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759244,8,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965759248,4,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759262,7,GET categorias,200,,GET's de Endpoints 1-23,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965759411,4,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965759438,6,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965759442,8,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965759453,8,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965759483,6,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965759483,6,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965759508,5,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965759553,4,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965759553,4,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965759569,6,GET Itens,200,,GET's de Endpoints 1-23,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965759699,11,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,10,0,1
+1792965759716,6,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965759746,4,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759753,3,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965759762,4,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759790,4,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759790,5,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759813,4,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965759858,3,GET categorias,200,,GET's de Endpoints 1-24,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965759860,9,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965760010,5,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965760023,6,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965760050,4,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965760056,4,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965760068,11,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965760094,7,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760097,7,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760119,15,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,15,0,0
+1792965760162,5,GET Itens,200,,GET's de Endpoints 1-24,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965760169,6,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,10,10,http://localhost:8080/itens,6,0,0
+1792965760295,7,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,2
+1792965760317,4,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965760329,4,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965760355,3,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965760362,2,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965760379,4,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965760401,9,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965760404,9,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965760435,3,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965760475,3,GET categorias,200,,GET's de Endpoints 1-25,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965760603,10,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965760622,6,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965760633,6,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965760659,9,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965760665,7,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760686,7,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760711,7,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760713,8,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965760739,6,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965760779,7,GET Itens,200,,GET's de Endpoints 1-25,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965760893,9,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,6
+1792965760913,13,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,13,0,0
+1792965760929,4,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965760939,4,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965760969,3,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965760973,9,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965760993,8,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965761018,6,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965761022,3,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965761045,5,GET categorias,200,,GET's de Endpoints 1-26,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965761203,4,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965761227,7,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965761233,5,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965761243,10,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965761272,10,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965761282,7,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965761306,6,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965761326,6,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965761325,8,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965761350,6,GET Itens,200,,GET's de Endpoints 1-26,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965761497,6,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965761508,3,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965761535,4,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965761539,4,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965761554,7,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965761582,6,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965761589,4,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965761612,4,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965761632,3,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965761633,3,GET categorias,200,,GET's de Endpoints 1-27,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965761803,7,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965761812,12,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965761844,9,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965761842,11,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965761863,10,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965761888,13,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965761893,11,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965761917,4,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965761936,10,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965761938,8,GET Itens,200,,GET's de Endpoints 1-27,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965762093,14,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,14,0,1
+1792965762113,3,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762125,5,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965762155,6,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965762154,7,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965762173,6,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965762202,3,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762206,6,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965762223,7,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965762246,4,GET categorias,200,,GET's de Endpoints 1-28,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965762408,4,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965762416,10,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965762431,5,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965762461,12,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965762466,10,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965762479,8,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965762505,7,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965762512,7,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965762530,6,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965762550,5,GET Itens,200,,GET's de Endpoints 1-28,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965762697,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,1
+1792965762713,5,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965762726,3,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762737,3,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762776,3,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762775,5,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965762789,3,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762813,2,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965762819,3,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965762836,3,GET categorias,200,,GET's de Endpoints 1-29,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763002,5,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763018,6,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965763030,4,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763040,5,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763080,4,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763080,16,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,16,0,0
+1792965763093,5,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763116,4,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763122,10,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965763140,5,GET Itens,200,,GET's de Endpoints 1-29,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763295,4,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965763309,5,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965763324,4,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763336,3,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763345,3,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763385,2,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965763396,4,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965763398,3,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763421,2,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965763432,3,GET categorias,200,,GET's de Endpoints 1-30,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763599,4,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763614,5,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763628,4,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763639,5,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763649,6,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965763688,4,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965763700,7,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965763702,7,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965763724,5,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763735,5,GET Itens,200,,GET's de Endpoints 1-30,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965763894,4,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965763907,3,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763919,6,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965763936,3,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763945,3,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965763955,5,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965763992,4,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965764007,6,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965764009,5,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965764031,4,GET categorias,200,,GET's de Endpoints 1-31,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965764199,5,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965764211,7,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965764226,7,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965764240,10,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965764248,6,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965764261,7,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965764297,12,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965764315,10,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965764315,12,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965764336,7,GET Itens,200,,GET's de Endpoints 1-31,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965764498,4,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965764505,4,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965764520,2,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965764533,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965764551,8,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965764556,6,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965764569,3,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965764610,6,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965764626,6,GET categorias,200,,GET's de Endpoints 1-32,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965764630,3,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965764806,4,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,3,0,0
+1792965764813,6,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965764823,8,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965764842,4,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965764860,6,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965764867,5,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965764873,4,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965764916,4,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965764932,6,GET Itens,200,,GET's de Endpoints 1-32,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965764936,7,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,10,10,http://localhost:8080/itens,7,0,0
+1792965765097,4,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,1
+1792965765110,4,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965765120,3,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765131,5,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965765153,3,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765167,3,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765172,3,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765181,7,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965765223,4,GET categorias,200,,GET's de Endpoints 1-33,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965765243,3,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765403,7,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965765418,11,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965765425,8,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965765438,7,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965765457,12,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965765476,12,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965765475,14,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,14,0,0
+1792965765488,4,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965765528,6,GET Itens,200,,GET's de Endpoints 1-33,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965765547,8,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,10,10,http://localhost:8080/itens,8,0,0
+1792965765697,4,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,1
+1792965765711,3,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765733,10,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,10,0,0
+1792965765729,21,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,21,0,0
+1792965765746,9,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965765773,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965765792,6,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965765789,10,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965765793,6,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965765860,4,GET categorias,200,,GET's de Endpoints 1-34,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965766003,8,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965766015,6,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766043,4,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965766051,7,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766056,5,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965766077,8,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965766100,9,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965766102,11,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965766274,6,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766276,5,GET Itens,200,,GET's de Endpoints 1-34,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965766293,4,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965766315,5,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965766322,3,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965766348,2,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965766361,2,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965766361,2,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965766388,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965766410,7,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965766414,4,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965766580,8,GET categorias,200,,GET's de Endpoints 1-35,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965766598,6,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766621,6,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766627,4,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965766650,6,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766664,11,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965766666,12,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965766696,6,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965766719,13,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965766718,17,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,17,0,0
+1792965766889,5,GET Itens,200,,GET's de Endpoints 1-35,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965766895,8,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,1
+1792965766916,8,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965766928,8,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965766936,3,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965766957,9,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965766975,4,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965766978,3,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965767002,3,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965767033,6,GET categorias,200,,GET's de Endpoints 1-36,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965767035,5,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965767206,4,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965767224,4,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965767236,4,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965767240,3,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,3,0,0
+1792965767267,4,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,4,0,0
+1792965767280,6,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965767283,9,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965767305,5,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965767339,13,GET Itens,200,,GET's de Endpoints 1-36,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965767343,12,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,10,10,http://localhost:8080/itens,12,0,0
+1792965767497,6,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,1
+1792965767513,4,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965767529,4,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965767543,8,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965767544,8,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,0
+1792965767573,5,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965767587,6,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965767592,11,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965767613,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965767657,6,GET categorias,200,,GET's de Endpoints 1-37,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965767806,16,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,11,11,http://localhost:8080/itens,14,0,0
+1792965767834,12,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965767818,35,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,11,11,http://localhost:8080/itens,35,0,0
+1792965767852,8,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965767858,5,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965767881,5,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965767893,7,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965767903,11,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,11,0,0
+1792965767917,13,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965767966,5,GET Itens,200,,GET's de Endpoints 1-37,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965768097,5,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768123,5,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768147,3,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965768153,4,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768163,4,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768164,5,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768186,3,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965768200,5,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768215,4,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768230,4,GET categorias,200,,GET's de Endpoints 1-38,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768408,12,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965768441,6,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965768456,9,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965768457,12,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,11,11,http://localhost:8080/itens,12,0,0
+1792965768473,13,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965768469,24,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,24,0,0
+1792965768506,7,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965768512,5,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965768519,7,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965768539,10,GET Itens,200,,GET's de Endpoints 1-38,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965768694,8,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,10,10,http://localhost:8080/categorias,8,0,1
+1792965768720,5,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768753,4,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768769,5,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768781,7,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965768793,6,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965768794,6,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965768813,4,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768818,4,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965768826,7,GET categorias,200,,GET's de Endpoints 1-39,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965769003,6,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965769025,9,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965769058,6,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965769076,8,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965769088,7,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965769100,6,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965769101,10,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965769118,7,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965769124,6,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,6,0,0
+1792965769135,5,GET Itens,200,,GET's de Endpoints 1-39,text,true,,1222,158,11,11,http://localhost:8080/itens,5,0,0
+1792965769297,6,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,1
+1792965769310,6,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,10,10,http://localhost:8080/categorias,6,0,0
+1792965769334,4,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965769366,4,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965769384,3,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965769397,5,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965769409,7,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,7,0,0
+1792965769411,9,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965769426,5,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,0
+1792965769431,11,GET categorias,200,,GET's de Endpoints 1-40,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965769604,8,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965769617,8,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965769639,7,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965769670,9,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,11,11,http://localhost:8080/itens,8,0,0
+1792965769688,20,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,11,11,http://localhost:8080/itens,20,0,0
+1792965769702,13,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,11,11,http://localhost:8080/itens,13,0,0
+1792965769717,9,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965769721,7,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,11,11,http://localhost:8080/itens,7,0,0
+1792965769732,9,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,11,11,http://localhost:8080/itens,9,0,0
+1792965769745,10,GET Itens,200,,GET's de Endpoints 1-40,text,true,,1222,158,11,11,http://localhost:8080/itens,10,0,0
+1792965769893,5,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,10,10,http://localhost:8080/categorias,5,0,2
+1792965769912,3,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965769925,3,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965769947,3,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965769979,3,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965770009,2,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,10,10,http://localhost:8080/categorias,2,0,0
+1792965770016,4,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965770029,4,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,10,10,http://localhost:8080/categorias,4,0,0
+1792965770027,9,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,10,10,http://localhost:8080/categorias,9,0,0
+1792965770042,3,GET categorias,200,,GET's de Endpoints 1-41,text,true,,423,163,10,10,http://localhost:8080/categorias,3,0,0
+1792965770199,7,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,10,10,http://localhost:8080/itens,7,0,0
+1792965770215,5,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,10,10,http://localhost:8080/itens,5,0,0
+1792965770228,5,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965770250,5,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,10,10,http://localhost:8080/itens,5,0,0
+1792965770283,8,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,10,10,http://localhost:8080/itens,8,0,0
+1792965770312,4,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965770321,5,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,10,10,http://localhost:8080/itens,5,0,0
+1792965770334,4,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965770337,4,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965770345,4,GET Itens,200,,GET's de Endpoints 1-41,text,true,,1222,158,10,10,http://localhost:8080/itens,4,0,0
+1792965770506,3,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,9,9,http://localhost:8080/categorias,3,0,0
+1792965770520,3,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,9,9,http://localhost:8080/categorias,3,0,0
+1792965770533,4,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,9,9,http://localhost:8080/categorias,4,0,0
+1792965770556,2,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,9,9,http://localhost:8080/categorias,2,0,0
+1792965770592,4,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,9,9,http://localhost:8080/categorias,4,0,0
+1792965770617,2,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,9,9,http://localhost:8080/categorias,2,0,0
+1792965770627,3,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,9,9,http://localhost:8080/categorias,3,0,0
+1792965770639,3,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,9,9,http://localhost:8080/categorias,3,0,0
+1792965770642,5,GET categorias,200,,GET's de Endpoints 1-42,text,true,,423,163,9,9,http://localhost:8080/categorias,5,0,0
+1792965770809,5,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,9,9,http://localhost:8080/itens,5,0,0
+1792965770824,4,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770837,4,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770858,7,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,9,9,http://localhost:8080/itens,7,0,0
+1792965770896,4,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770922,4,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770930,4,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770942,4,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965770947,4,GET Itens,200,,GET's de Endpoints 1-42,text,true,,1222,158,9,9,http://localhost:8080/itens,4,0,0
+1792965771114,3,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771128,3,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771149,3,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771166,4,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,8,8,http://localhost:8080/categorias,4,0,0
+1792965771200,3,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771227,3,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771235,3,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,8,8,http://localhost:8080/categorias,3,0,0
+1792965771246,4,GET categorias,200,,GET's de Endpoints 1-43,text,true,,423,163,8,8,http://localhost:8080/categorias,4,0,0
+1792965771417,6,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,8,8,http://localhost:8080/itens,6,0,0
+1792965771433,9,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,8,8,http://localhost:8080/itens,9,0,0
+1792965771454,5,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,8,8,http://localhost:8080/itens,5,0,0
+1792965771476,9,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,8,8,http://localhost:8080/itens,9,0,0
+1792965771506,5,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,8,8,http://localhost:8080/itens,5,0,0
+1792965771531,5,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,8,8,http://localhost:8080/itens,5,0,0
+1792965771538,6,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,8,8,http://localhost:8080/itens,6,0,0
+1792965771550,19,GET Itens,200,,GET's de Endpoints 1-43,text,true,,1222,158,8,8,http://localhost:8080/itens,19,0,0
+1792965771723,4,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,7,7,http://localhost:8080/categorias,4,0,0
+1792965771743,7,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,7,7,http://localhost:8080/categorias,7,0,0
+1792965771761,5,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,7,7,http://localhost:8080/categorias,4,0,0
+1792965771786,4,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,7,7,http://localhost:8080/categorias,4,0,0
+1792965771811,4,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,7,7,http://localhost:8080/categorias,4,0,0
+1792965771838,6,GET categorias,200,,GET's de Endpoints 1-44,text,true,,423,163,7,7,http://localhost:8080/categorias,6,0,0
+1792965771845,6,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,7,7,http://localhost:8080/categorias,6,0,0
+1792965772033,7,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,7,7,http://localhost:8080/itens,7,0,0
+1792965772050,8,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,7,7,http://localhost:8080/itens,8,0,0
+1792965772066,5,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,7,7,http://localhost:8080/itens,5,0,0
+1792965772090,5,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,7,7,http://localhost:8080/itens,5,0,0
+1792965772115,8,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,7,7,http://localhost:8080/itens,7,0,0
+1792965772144,7,GET Itens,200,,GET's de Endpoints 1-44,text,true,,1222,158,7,7,http://localhost:8080/itens,7,0,0
+1792965772153,6,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,6,6,http://localhost:8080/itens,6,0,0
+1792965772341,6,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,6,6,http://localhost:8080/categorias,6,0,0
+1792965772359,7,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,6,6,http://localhost:8080/categorias,6,0,0
+1792965772373,4,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,6,6,http://localhost:8080/categorias,4,0,0
+1792965772396,4,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,6,6,http://localhost:8080/categorias,4,0,0
+1792965772425,4,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,6,6,http://localhost:8080/categorias,4,0,0
+1792965772463,4,GET categorias,200,,GET's de Endpoints 1-45,text,true,,423,163,6,6,http://localhost:8080/categorias,4,0,0
+1792965772648,5,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,6,6,http://localhost:8080/itens,5,0,0
+1792965772666,4,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,6,6,http://localhost:8080/itens,4,0,0
+1792965772677,10,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,6,6,http://localhost:8080/itens,10,0,0
+1792965772701,4,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,6,6,http://localhost:8080/itens,4,0,0
+1792965772729,7,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,6,6,http://localhost:8080/itens,7,0,0
+1792965772768,8,GET Itens,200,,GET's de Endpoints 1-45,text,true,,1222,158,6,6,http://localhost:8080/itens,8,0,0
+1792965772954,8,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,5,5,http://localhost:8080/categorias,6,0,0
+1792965772973,3,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,5,5,http://localhost:8080/categorias,3,0,0
+1792965772988,3,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,5,5,http://localhost:8080/categorias,3,0,0
+1792965773006,3,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,5,5,http://localhost:8080/categorias,3,0,0
+1792965773037,7,GET categorias,200,,GET's de Endpoints 1-46,text,true,,423,163,5,5,http://localhost:8080/categorias,7,0,0
+1792965773262,4,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,5,5,http://localhost:8080/itens,4,0,0
+1792965773277,5,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,5,5,http://localhost:8080/itens,5,0,0
+1792965773296,5,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,5,5,http://localhost:8080/itens,5,0,0
+1792965773310,7,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,5,5,http://localhost:8080/itens,7,0,0
+1792965773345,7,GET Itens,200,,GET's de Endpoints 1-46,text,true,,1222,158,5,5,http://localhost:8080/itens,7,0,0
+1792965773567,3,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,4,4,http://localhost:8080/categorias,3,0,0
+1792965773582,4,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,4,4,http://localhost:8080/categorias,4,0,0
+1792965773602,2,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,4,4,http://localhost:8080/categorias,2,0,0
+1792965773617,4,GET categorias,200,,GET's de Endpoints 1-47,text,true,,423,163,4,4,http://localhost:8080/categorias,4,0,0
+1792965773870,4,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,4,4,http://localhost:8080/itens,4,0,0
+1792965773887,8,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,4,4,http://localhost:8080/itens,8,0,0
+1792965773905,4,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,4,4,http://localhost:8080/itens,4,0,0
+1792965773921,4,GET Itens,200,,GET's de Endpoints 1-47,text,true,,1222,158,4,4,http://localhost:8080/itens,4,0,0
+1792965774175,3,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,3,3,http://localhost:8080/categorias,3,0,0
+1792965774196,10,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,3,3,http://localhost:8080/categorias,9,0,0
+1792965774214,7,GET categorias,200,,GET's de Endpoints 1-48,text,true,,423,163,3,3,http://localhost:8080/categorias,6,0,0
+1792965774478,5,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,3,3,http://localhost:8080/itens,5,0,0
+1792965774507,4,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,3,3,http://localhost:8080/itens,4,0,0
+1792965774522,7,GET Itens,200,,GET's de Endpoints 1-48,text,true,,1222,158,3,3,http://localhost:8080/itens,7,0,0
+1792965774783,4,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,2,2,http://localhost:8080/categorias,4,0,0
+1792965774813,3,GET categorias,200,,GET's de Endpoints 1-49,text,true,,423,163,2,2,http://localhost:8080/categorias,3,0,0
+1792965775087,12,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,2,2,http://localhost:8080/itens,12,0,0
+1792965775117,10,GET Itens,200,,GET's de Endpoints 1-49,text,true,,1222,158,2,2,http://localhost:8080/itens,10,0,0
+1792965775400,3,GET categorias,200,,GET's de Endpoints 1-50,text,true,,423,163,1,1,http://localhost:8080/categorias,3,0,0
+1792965775706,5,GET Itens,200,,GET's de Endpoints 1-50,text,true,,1222,158,1,1,http://localhost:8080/itens,5,0,0

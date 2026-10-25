@@ -405,4 +405,18 @@ A primeira etapa do projeto tem como foco:
 - Tratamento de exceções.
 - Estruturação das entidades e relacionamentos.
 
+
+
+# Testes de Carga (JMeter)
+
+- Relatório em: ./JMeter/relatorio/index.html
+
+
+- criar relatório:
+```bash
+#Em ./emporio-back/ 
+/opt/jmeter/bin/jmeter -n -t JMeter/Testes-Carga.jmx -l JMeter/resultados.jtl -e -o JMeter/relatorio
+```
+
+
 Novas funcionalidades serão adicionadas conforme o desenvolvimento do projeto.
