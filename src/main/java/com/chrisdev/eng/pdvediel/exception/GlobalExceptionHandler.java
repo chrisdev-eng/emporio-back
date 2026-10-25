@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Map;
 
 @RestControllerAdvice
@@ -103,7 +104,7 @@ public class GlobalExceptionHandler {
             String mensagem) {
 
         Map<String, Object> resposta = Map.of(
-                "dataHora", LocalDateTime.now(),
+                "dataHora", LocalDateTime.now(ZoneId.of("America/Sao_Paulo")),
                 "status", status.value(),
                 "erro", erro,
                 "mensagem", mensagem

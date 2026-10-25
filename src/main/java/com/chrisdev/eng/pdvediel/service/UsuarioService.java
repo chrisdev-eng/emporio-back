@@ -15,6 +15,8 @@ import java.util.List;
 @Service
 public class UsuarioService {
 
+    private static final String USUARIO_NAO_ENCONTRADO = "Usuário não encontrado";
+
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
 
@@ -32,7 +34,7 @@ public class UsuarioService {
 
     public UsuarioResponseDTO buscarPorId(Long id) {
         Usuario usuario = usuarioRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException(USUARIO_NAO_ENCONTRADO));
 
         return converterParaResponse(usuario);
     }
@@ -53,7 +55,7 @@ public class UsuarioService {
 
     public UsuarioResponseDTO atualizar(Long id, UsuarioUpdateDTO dto) {
         Usuario usuarioExistente = usuarioRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException(USUARIO_NAO_ENCONTRADO));
 
         usuarioExistente.setNome(dto.nome());
         usuarioExistente.setLogin(dto.login());
@@ -70,7 +72,7 @@ public class UsuarioService {
 
     public void excluir(Long id) {
         Usuario usuario = usuarioRepository.findById(id)
-            .orElseThrow(() -> new RecursoNaoEncontradoException("Usuário não encontrado"));
+            .orElseThrow(() -> new RecursoNaoEncontradoException(USUARIO_NAO_ENCONTRADO));
 
         usuario.setAtivo(false);
         usuarioRepository.save(usuario);

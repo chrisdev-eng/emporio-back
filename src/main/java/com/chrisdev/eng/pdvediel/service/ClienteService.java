@@ -13,6 +13,8 @@ import java.util.List;
 @Service
 public class ClienteService {
 
+    private static final String CLIENTE_NAO_ENCONTRADO = "Cliente não encontrado";
+
     private final ClienteRepository clienteRepository;
     private final CepService cepService;
 
@@ -34,7 +36,7 @@ public class ClienteService {
     public ClienteResponseDTO buscarPorId(Long id) {
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Cliente não encontrado"));
+                        new RecursoNaoEncontradoException(CLIENTE_NAO_ENCONTRADO));
 
         return converterParaResponse(cliente);
     }
@@ -65,7 +67,7 @@ public class ClienteService {
 
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Cliente não encontrado"));
+                        new RecursoNaoEncontradoException(CLIENTE_NAO_ENCONTRADO));
 
         ViaCepResponse endereco = cepService.buscarPorCep(dto.cep());
 
@@ -89,7 +91,7 @@ public class ClienteService {
 
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Cliente não encontrado"));
+                        new RecursoNaoEncontradoException(CLIENTE_NAO_ENCONTRADO));
 
         cliente.setAtivo(false);
         clienteRepository.save(cliente);

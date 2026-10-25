@@ -52,7 +52,9 @@ class LoginServiceTest {
     void deveLancarErroQuandoUsuarioNaoExiste() {
         when(usuarioRepository.findByLogin("inexistente")).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> loginService.autenticar(new LoginRequestDTO("inexistente", "admin123")))
+        var requisicao = new LoginRequestDTO("inexistente", "admin123");
+
+        assertThatThrownBy(() -> loginService.autenticar(requisicao))
                 .isInstanceOf(CredenciaisInvalidasException.class)
                 .hasMessage("Login ou senha inválidos");
     }
@@ -63,7 +65,9 @@ class LoginServiceTest {
         when(usuarioRepository.findByLogin("admin")).thenReturn(Optional.of(usuario));
         when(passwordEncoder.matches("senhaerrada", usuario.getSenha())).thenReturn(false);
 
-        assertThatThrownBy(() -> loginService.autenticar(new LoginRequestDTO("admin", "senhaerrada")))
+        var requisicao = new LoginRequestDTO("admin", "senhaerrada");
+
+        assertThatThrownBy(() -> loginService.autenticar(requisicao))
                 .isInstanceOf(CredenciaisInvalidasException.class)
                 .hasMessage("Login ou senha inválidos");
     }
@@ -74,7 +78,9 @@ class LoginServiceTest {
         when(usuarioRepository.findByLogin("admin")).thenReturn(Optional.of(usuario));
         when(passwordEncoder.matches("admin123", usuario.getSenha())).thenReturn(true);
 
-        assertThatThrownBy(() -> loginService.autenticar(new LoginRequestDTO("admin", "admin123")))
+        var requisicao = new LoginRequestDTO("admin", "admin123");
+
+        assertThatThrownBy(() -> loginService.autenticar(requisicao))
                 .isInstanceOf(CredenciaisInvalidasException.class)
                 .hasMessage("Usuário inativo");
     }

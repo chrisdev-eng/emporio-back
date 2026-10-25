@@ -13,6 +13,8 @@ import java.util.List;
 @Service
 public class CategoriaService {
 
+    private static final String CATEGORIA_NAO_ENCONTRADA = "Categoria não encontrada";
+
     private final CategoriaRepository categoriaRepository;
 
     public CategoriaService(CategoriaRepository categoriaRepository) {
@@ -29,7 +31,7 @@ public class CategoriaService {
     public CategoriaResponseDTO buscarPorId(Long id) {
         Categoria categoria = categoriaRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Categoria não encontrada"));
+                        new RecursoNaoEncontradoException(CATEGORIA_NAO_ENCONTRADA));
         return converterParaResponse(categoria);
     }
 
@@ -48,7 +50,7 @@ public class CategoriaService {
 
         Categoria categoriaExistente = categoriaRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Categoria não encontrada"));
+                        new RecursoNaoEncontradoException(CATEGORIA_NAO_ENCONTRADA));
         categoriaExistente.setNome(dto.nome());
 
         Categoria categoriaAtualizada =
@@ -61,7 +63,7 @@ public class CategoriaService {
 
         Categoria categoria = categoriaRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Categoria não encontrada"));
+                        new RecursoNaoEncontradoException(CATEGORIA_NAO_ENCONTRADA));
         categoria.setAtivo(false);
         categoriaRepository.save(categoria);
     }

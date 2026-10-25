@@ -114,8 +114,9 @@ class ClienteServiceTest {
     void deveLancarErroAoAtualizarClienteInexistente() {
         when(clienteRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> clienteService.atualizar(
-                99L, new ClienteRequestDTO("Cliente Teste", "12345678901", "01001000", "100", null)))
+        var requisicao = new ClienteRequestDTO("Cliente Teste", "12345678901", "01001000", "100", null);
+
+        assertThatThrownBy(() -> clienteService.atualizar(99L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Cliente não encontrado");
     }

@@ -15,6 +15,8 @@ import java.util.List;
 @Service
 public class EstoqueService {
 
+    private static final String ESTOQUE_NAO_ENCONTRADO = "Estoque não encontrado";
+
     private final EstoqueRepository estoqueRepository;
     private final ItemRepository itemRepository;
 
@@ -36,7 +38,7 @@ public class EstoqueService {
     public EstoqueResponseDTO buscarPorId(Long id) {
         Estoque estoque = estoqueRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Estoque não encontrado"));
+                        new RecursoNaoEncontradoException(ESTOQUE_NAO_ENCONTRADO));
 
         return converterParaResponse(estoque);
     }
@@ -58,7 +60,7 @@ public class EstoqueService {
     public EstoqueResponseDTO atualizar(Long id, EstoqueRequestDTO dto) {
         Estoque estoqueExistente = estoqueRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Estoque não encontrado"));
+                        new RecursoNaoEncontradoException(ESTOQUE_NAO_ENCONTRADO));
 
         Item item = itemRepository.findById(dto.itemId())
                 .orElseThrow(() ->
@@ -75,7 +77,7 @@ public class EstoqueService {
     public void excluir(Long id) {
         Estoque estoque = estoqueRepository.findById(id)
                 .orElseThrow(() ->
-                        new RecursoNaoEncontradoException("Estoque não encontrado"));
+                        new RecursoNaoEncontradoException(ESTOQUE_NAO_ENCONTRADO));
 
         estoqueRepository.delete(estoque);
     }

@@ -102,7 +102,9 @@ class CategoriaServiceTest {
     void deveLancarErroAoAtualizarCategoriaInexistente() {
         when(categoriaRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> categoriaService.atualizar(99L, new CategoriaRequestDTO("Cadeados")))
+        var requisicao = new CategoriaRequestDTO("Cadeados");
+
+        assertThatThrownBy(() -> categoriaService.atualizar(99L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Categoria não encontrada");
     }

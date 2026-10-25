@@ -113,8 +113,10 @@ class ItemServiceTest {
     void deveLancarErroAoCriarItemComCategoriaInexistente() {
         when(categoriaRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> itemService.criar(new ItemRequestDTO(
-                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 99L)))
+        var requisicao = new ItemRequestDTO(
+                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 99L);
+
+        assertThatThrownBy(() -> itemService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Categoria não encontrada");
     }
@@ -138,8 +140,10 @@ class ItemServiceTest {
     void deveLancarErroAoAtualizarItemInexistente() {
         when(itemRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> itemService.atualizar(99L, new ItemRequestDTO(
-                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 1L)))
+        var requisicao = new ItemRequestDTO(
+                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 1L);
+
+        assertThatThrownBy(() -> itemService.atualizar(99L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item não encontrado");
     }
@@ -149,8 +153,10 @@ class ItemServiceTest {
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item(1L, "Chave Yale")));
         when(categoriaRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> itemService.atualizar(1L, new ItemRequestDTO(
-                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 99L)))
+        var requisicao = new ItemRequestDTO(
+                "Chave Yale", "virgem", new BigDecimal("10.00"), TipoItem.PRODUTO, 99L);
+
+        assertThatThrownBy(() -> itemService.atualizar(1L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Categoria não encontrada");
     }

@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 @Service
@@ -121,7 +122,7 @@ public class MovimentacaoEstoqueService {
         movimentacao.setItem(item);
         movimentacao.setQuantidade(dto.quantidade());
         movimentacao.setTipo(dto.tipo());
-        movimentacao.setData(LocalDateTime.now());
+        movimentacao.setData(LocalDateTime.now(ZoneId.of("America/Sao_Paulo")));
         movimentacao.setUsuario(usuario);
 
         MovimentacaoEstoque movimentacaoSalva =

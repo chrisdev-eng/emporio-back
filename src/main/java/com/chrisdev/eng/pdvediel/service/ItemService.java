@@ -15,6 +15,8 @@ import java.util.List;
 @Service
 public class ItemService {
 
+    private static final String ITEM_NAO_ENCONTRADO = "Item não encontrado";
+
     private final ItemRepository itemRepository;
     private final CategoriaRepository categoriaRepository;
 
@@ -35,7 +37,7 @@ public class ItemService {
 
     public ItemResponseDTO buscarPorId(Long id) {
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException(ITEM_NAO_ENCONTRADO));
 
         return converterParaResponse(item);
     }
@@ -67,7 +69,7 @@ public class ItemService {
     public ItemResponseDTO atualizar(Long id, ItemRequestDTO dto) {
 
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException(ITEM_NAO_ENCONTRADO));
 
         Categoria categoria = categoriaRepository.findById(dto.categoriaId())
                 .orElseThrow(() -> new RecursoNaoEncontradoException("Categoria não encontrada"));
@@ -86,7 +88,7 @@ public class ItemService {
     public void excluir(Long id) {
 
         Item item = itemRepository.findById(id)
-                .orElseThrow(() -> new RecursoNaoEncontradoException("Item não encontrado"));
+                .orElseThrow(() -> new RecursoNaoEncontradoException(ITEM_NAO_ENCONTRADO));
 
         item.setAtivo(false);
         itemRepository.save(item);

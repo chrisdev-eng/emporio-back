@@ -143,8 +143,9 @@ class MovimentacaoEstoqueServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario()));
         when(estoqueRepository.findByItemId(1L)).thenReturn(Optional.of(estoque(3)));
 
-        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(
-                new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.SAIDA, 1L)))
+        var requisicao = new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.SAIDA, 1L);
+
+        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(requisicao))
                 .isInstanceOf(EstoqueInsuficienteException.class)
                 .hasMessage("Estoque insuficiente");
     }
@@ -153,8 +154,9 @@ class MovimentacaoEstoqueServiceTest {
     void deveLancarErroQuandoItemNaoExiste() {
         when(itemRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(
-                new MovimentacaoEstoqueRequestDTO(99L, 5, TipoMovimentacao.ENTRADA, 1L)))
+        var requisicao = new MovimentacaoEstoqueRequestDTO(99L, 5, TipoMovimentacao.ENTRADA, 1L);
+
+        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item não encontrado");
     }
@@ -164,8 +166,9 @@ class MovimentacaoEstoqueServiceTest {
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item()));
         when(usuarioRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(
-                new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.ENTRADA, 99L)))
+        var requisicao = new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.ENTRADA, 99L);
+
+        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Usuário não encontrado");
     }
@@ -176,8 +179,9 @@ class MovimentacaoEstoqueServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario()));
         when(estoqueRepository.findByItemId(1L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(
-                new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.ENTRADA, 1L)))
+        var requisicao = new MovimentacaoEstoqueRequestDTO(1L, 5, TipoMovimentacao.ENTRADA, 1L);
+
+        assertThatThrownBy(() -> movimentacaoEstoqueService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Estoque não encontrado para o item");
     }

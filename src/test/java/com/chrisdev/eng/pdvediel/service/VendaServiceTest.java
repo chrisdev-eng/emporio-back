@@ -1,7 +1,6 @@
 package com.chrisdev.eng.pdvediel.service;
 
 import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaRequestDTO;
-import com.chrisdev.eng.pdvediel.controller.dto.ItemVendaResponseDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaRequestDTO;
 import com.chrisdev.eng.pdvediel.controller.dto.VendaResponseDTO;
 import com.chrisdev.eng.pdvediel.entity.Categoria;
@@ -149,7 +148,9 @@ class VendaServiceTest {
     void deveLancarErroQuandoUsuarioNaoExiste() {
         when(usuarioRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("20.00"), 99L, 1L)))
+        var requisicao = requisicao(new BigDecimal("20.00"), 99L, 1L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Usuário não encontrado");
     }
@@ -158,7 +159,9 @@ class VendaServiceTest {
     void deveLancarErroQuandoUsuarioEstaInativo() {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, false)));
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("20.00"), 1L, 1L)))
+        var requisicao = requisicao(new BigDecimal("20.00"), 1L, 1L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Usuário inativo");
     }
@@ -168,9 +171,10 @@ class VendaServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, true)));
         when(clienteRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> vendaService.criar(
-                new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, 99L, new BigDecimal("20.00"),
-                        List.of(new ItemVendaRequestDTO(1L, 1)))))
+        var requisicao = new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, 99L, new BigDecimal("20.00"),
+                        List.of(new ItemVendaRequestDTO(1L, 1)));
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Cliente não encontrado");
     }
@@ -180,9 +184,10 @@ class VendaServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, true)));
         when(clienteRepository.findById(7L)).thenReturn(Optional.of(cliente(7L, false)));
 
-        assertThatThrownBy(() -> vendaService.criar(
-                new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, 7L, new BigDecimal("20.00"),
-                        List.of(new ItemVendaRequestDTO(1L, 1)))))
+        var requisicao = new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, 7L, new BigDecimal("20.00"),
+                        List.of(new ItemVendaRequestDTO(1L, 1)));
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Cliente inativo");
     }
@@ -192,7 +197,9 @@ class VendaServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, true)));
         when(itemRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("20.00"), 1L, 99L)))
+        var requisicao = requisicao(new BigDecimal("20.00"), 1L, 99L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item não encontrado");
     }
@@ -202,7 +209,9 @@ class VendaServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, true)));
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item(1L, TipoItem.SERVICO, false)));
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("20.00"), 1L, 1L)))
+        var requisicao = requisicao(new BigDecimal("20.00"), 1L, 1L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item inativo");
     }
@@ -213,7 +222,9 @@ class VendaServiceTest {
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item(1L, TipoItem.PRODUTO, true)));
         when(estoqueRepository.findByItemId(1L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("20.00"), 1L, 1L)))
+        var requisicao = requisicao(new BigDecimal("20.00"), 1L, 1L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Estoque não encontrado para o produto");
     }
@@ -224,9 +235,10 @@ class VendaServiceTest {
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item(1L, TipoItem.PRODUTO, true)));
         when(estoqueRepository.findByItemId(1L)).thenReturn(Optional.of(estoque(1, item(1L, TipoItem.PRODUTO, true))));
 
-        assertThatThrownBy(() -> vendaService.criar(
-                new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, null, new BigDecimal("50.00"),
-                        List.of(new ItemVendaRequestDTO(1L, 5)))))
+        var requisicao = new VendaRequestDTO(FormaPagamento.DINHEIRO, 1L, null, new BigDecimal("50.00"),
+                        List.of(new ItemVendaRequestDTO(1L, 5)));
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(EstoqueInsuficienteException.class)
                 .hasMessage("Estoque insuficiente para o item: Chave Yale");
     }
@@ -236,7 +248,9 @@ class VendaServiceTest {
         when(usuarioRepository.findById(1L)).thenReturn(Optional.of(usuario(1L, true)));
         when(itemRepository.findById(1L)).thenReturn(Optional.of(item(1L, TipoItem.SERVICO, true)));
 
-        assertThatThrownBy(() -> vendaService.criar(requisicao(new BigDecimal("5.00"), 1L, 1L)))
+        var requisicao = requisicao(new BigDecimal("5.00"), 1L, 1L);
+
+        assertThatThrownBy(() -> vendaService.criar(requisicao))
                 .isInstanceOf(ValorRecebidoInsuficienteException.class)
                 .hasMessage("O valor recebido é menor que o valor total da venda");
     }

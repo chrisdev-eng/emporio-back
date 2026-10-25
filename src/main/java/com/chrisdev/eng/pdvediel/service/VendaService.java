@@ -30,6 +30,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -128,7 +129,7 @@ public class VendaService {
                 movimentacao.setItem(item);
                 movimentacao.setQuantidade(itemDTO.quantidade());
                 movimentacao.setTipo(TipoMovimentacao.SAIDA);
-                movimentacao.setData(LocalDateTime.now());
+                movimentacao.setData(LocalDateTime.now(ZoneId.of("America/Sao_Paulo")));
                 movimentacao.setUsuario(usuario);
 
                 movimentacaoEstoqueRepository.save(movimentacao);
@@ -161,7 +162,7 @@ public class VendaService {
         }
 
         Venda venda = new Venda();
-        venda.setData(LocalDateTime.now());
+        venda.setData(LocalDateTime.now(ZoneId.of("America/Sao_Paulo")));
         venda.setValorTotal(valorTotal);
         venda.setValorRecebido(dto.valorRecebido());
         venda.setFormaPagamento(dto.formaPagamento());

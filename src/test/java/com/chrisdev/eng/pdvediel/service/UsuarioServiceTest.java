@@ -143,8 +143,10 @@ class UsuarioServiceTest {
     void deveLancarErroAoAtualizarUsuarioInexistente() {
         when(usuarioRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> usuarioService.atualizar(99L, new UsuarioUpdateDTO(
-                "Novo Nome", "admin", null, Perfil.DONO, true)))
+        var requisicao = new UsuarioUpdateDTO(
+                "Novo Nome", "admin", null, Perfil.DONO, true);
+
+        assertThatThrownBy(() -> usuarioService.atualizar(99L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Usuário não encontrado");
     }

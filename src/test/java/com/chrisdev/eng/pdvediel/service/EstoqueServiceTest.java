@@ -97,7 +97,9 @@ class EstoqueServiceTest {
     void deveLancarErroAoCriarEstoqueComItemInexistente() {
         when(itemRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> estoqueService.criar(new EstoqueRequestDTO(99L, 25)))
+        var requisicao = new EstoqueRequestDTO(99L, 25);
+
+        assertThatThrownBy(() -> estoqueService.criar(requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item não encontrado");
     }
@@ -119,7 +121,9 @@ class EstoqueServiceTest {
     void deveLancarErroAoAtualizarEstoqueInexistente() {
         when(estoqueRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> estoqueService.atualizar(99L, new EstoqueRequestDTO(1L, 40)))
+        var requisicao = new EstoqueRequestDTO(1L, 40);
+
+        assertThatThrownBy(() -> estoqueService.atualizar(99L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Estoque não encontrado");
     }
@@ -129,7 +133,9 @@ class EstoqueServiceTest {
         when(estoqueRepository.findById(1L)).thenReturn(Optional.of(estoque(1L, 10)));
         when(itemRepository.findById(99L)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> estoqueService.atualizar(1L, new EstoqueRequestDTO(99L, 40)))
+        var requisicao = new EstoqueRequestDTO(99L, 40);
+
+        assertThatThrownBy(() -> estoqueService.atualizar(1L, requisicao))
                 .isInstanceOf(RecursoNaoEncontradoException.class)
                 .hasMessage("Item não encontrado");
     }
